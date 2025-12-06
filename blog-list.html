@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ======== Primary Meta Tags ======== -->
+        <title>Ecobazar Blog – Grocery Tips, Recipes & Healthy Eating</title>
+        <meta name="description" content="Browse Ecobazar blog articles about smart grocery shopping, fresh food storage, easy recipes and healthy eating tips for everyday life.">
+        <meta name="keywords" content="Ecobazar blog, grocery tips, food blog, healthy recipes, fresh produce, kitchen hacks, cooking tips">
+        <meta name="author" content="Ecobazar">
+        <meta name="robots" content="index, follow">
+
+        <!-- ======== Canonical URL ======== -->
+        <link rel="canonical" href="https://www.ecobazar.com/blog.html">
+
+        <!-- ======== Favicon ======== -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <!-- ======== Open Graph / Facebook ======== -->
+        <meta property="og:title" content="Ecobazar Blog – Fresh Grocery & Kitchen Tips">
+        <meta property="og:description" content="Discover Ecobazar blog posts covering grocery guides, meal planning ideas, food storage hacks and healthy eating inspiration.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.ecobazar.com/blog.html">
+        <meta property="og:image" content="images/og-ecobazar.jpg">
+
+        <!-- ======== Twitter Card ======== -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Ecobazar Blog – Grocery & Recipe Ideas">
+        <meta name="twitter:description" content="Read Ecobazar blog articles for easy grocery advice, simple recipes and practical kitchen tips.">
+        <meta name="twitter:image" content="images/og-ecobazar.jpg">
+
+        <!-- ========== Custom CSS =========== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/blog-list.css">
+        <link rel="stylesheet" href="css/shop.css">
+
+        <!-- ========== Google Fonts =========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- ================== HEADER START ================== -->
+        <header class="eco-header">
+            <div class="eco-top-bar">
+                <div class="container eco-top-inner">
+                    <div class="eco-top-location">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>
+                            Store Location: Ecobazar, 344 Lincoln Ave, Chicago, Illinois, USA
+                        </span>
+                    </div>
+
+                    <div class="eco-top-right">
+                        <button class="eco-top-link" type="button">
+                            <img src="images/usa.png" alt="USA Flag">
+                            EN
+                        </button> 
+
+                        <span class="eco-top-separator"></span>
+                        <div class="eco-top-auth-wrap">
+                            <a href="signin.html#auth-section"
+                            id="ecoSignInLink"
+                            class="eco-top-auth">
+                                Sign In
+                            </a>
+
+                            <span class="eco-top-auth-divider">/</span>
+
+                            <a href="signup.html#auth-section"
+                            id="ecoSignUpLink"
+                            class="eco-top-auth">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eco-main-header">
+                <div class="container eco-main-inner">
+                    <a href="index.html" class="eco-logo" aria-label="Ecobazar Home">
+                        <img src="images/ecobazar-logo.png" alt="Ecobazar online grocery store logo">
+                    </a>
+                    <div class="eco-search-wrap">
+                        <div class="eco-search-field">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <input
+                                type="text"
+                                placeholder="Search">
+                        </div>
+                        <button class="eco-search-btn" type="button">
+                            Search
+                        </button>
+                    </div>
+
+                    <div class="eco-header-right">
+                        <button class="eco-wishlist-btn" type="button" aria-label="Wishlist">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="eco-wishlist-count" id="ecoWishlistCount">0</span>
+                        </button>
+
+                        <span class="eco-header-divider"></span>
+
+                        <button class="eco-cart-btn" type="button" aria-label="Cart">
+                            <span class="eco-cart-badge">0</span>
+                            <ion-icon name="bag-handle-outline"></ion-icon>
+                            <div class="eco-cart-text">
+                                <span class="eco-cart-label">Shopping cart:</span>
+                                <span class="eco-cart-amount">$00.00</span>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="eco-nav-bar sub-page-navbar">
+                <div class="container eco-nav-inner">
+                    <button class="eco-nav-toggle sub-page-toggle" type="button" aria-label="Toggle Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                        <span>Menu</span>
+                    </button>
+
+                    <ul class="eco-nav-menu subpage-navitem">
+                        <button class="eco-nav-close" type="button" aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <li class="eco-nav-item eco-active">
+                            <a class="eco-nav-link" href="/">Home</a>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Shop</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="shop.html">Shop Grid</a></li>
+                                <li><a href="shop-details.html">Product Details</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Pages</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="error-404.html">404 Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Blog</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="blog-list.html">Blog List</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="eco-nav-phone sub-eco-phone">
+                        <span class="eco-phone-icon">
+                            <img src="images/PhoneCall.png" alt="PhoneCall">
+                        </span>
+                        <a href="tel:+12195550114" class="eco-phone-number">
+                            (219) 555-0114
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- ================== HEADER END ====================== -->
+
+
+        
+        <!-- ================== HERO SECTION START ================== -->
+        <section class="sub-hero-section">
+            <div class="container">
+                <div class="subpage-title-details">
+                    <div class="subpage-icon">
+                        <img src="images/home-icon.png" alt="HOME ICON">
+                        <img src="images/home-left-arrow-icon.png" alt="ARROW">
+                    </div>
+                    <div class="subpage-title">
+                        <p>Blog List</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================== HERO SECTION END ================== -->
+
+        
+
+        <!-- ============ BLOG LIST SECTION START ============ -->
+        <section class="blgMainSection">
+            <div class="container blgMainContainer">
+                <!-- SIDEBAR -->
+                <aside class="blgSidebar">
+                    <!-- Filter Btn -->
+                    <button class="blgFilterBtn">
+                        <ion-icon name="options-outline"></ion-icon>
+                        <span>Filter</span>
+                    </button>
+
+                    <!-- Search -->
+                    <div class="blgSideBox blgSearchBox">
+                        <div class="blgSearchInner">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <input type="text" class="blgSearchInput" placeholder="Search articles...">
+                        </div>
+                    </div>
+
+                    <!-- Top Categories -->
+                    <div class="blgSideBox">
+                        <h3 class="blgSideTitle">Top Categories</h3>
+                        <ul class="blgCatList">
+                            <li>
+                                <span>Fresh Fruit</span>
+                                <span class="blgCatCount">(34)</span>
+                            </li>
+                            <li>
+                                <span>Vegetables</span>
+                                <span class="blgCatCount">(29)</span>
+                            </li>
+                            <li>
+                                <span>Cooking &amp; Recipes</span>
+                                <span class="blgCatCount">(21)</span>
+                            </li>
+                            <li>
+                                <span>Snacks &amp; Tiffin</span>
+                                <span class="blgCatCount">(18)</span>
+                            </li>
+                            <li>
+                                <span>Beverages</span>
+                                <span class="blgCatCount">(16)</span>
+                            </li>
+                            <li>
+                                <span>Healthy Living</span>
+                                <span class="blgCatCount">(19)</span>
+                            </li>
+                            <li>
+                                <span>Bread &amp; Bakery</span>
+                                <span class="blgCatCount">(12)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Tag -->
+                    <div class="blgSideBox">
+                        <h3 class="blgSideTitle">Popular Tag</h3>
+                        <div class="blgTagWrap">
+                            <button class="blgTagBtn active">Healthy</button>
+                            <button class="blgTagBtn">Low fat</button>
+                            <button class="blgTagBtn">Vegetarian</button>
+                            <button class="blgTagBtn">Bread</button>
+                            <button class="blgTagBtn">Kid foods</button>
+                            <button class="blgTagBtn">Vitamins</button>
+                            <button class="blgTagBtn">Snacks</button>
+                            <button class="blgTagBtn">Tiffin</button>
+                            <button class="blgTagBtn">Meal prep</button>
+                            <button class="blgTagBtn">Lunch</button>
+                            <button class="blgTagBtn">Dinner</button>
+                        </div>
+                    </div>
+
+                    <!-- Our Gallery -->
+                    <div class="blgSideBox">
+                        <h3 class="blgSideTitle">Our Gallery</h3>
+                        <div class="blgGalleryGrid">
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-1.png" alt="Fresh apples from Ecobazar">
+                            </a>
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-2.png" alt="Organic vegetables in a basket">
+                            </a>
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-3.png" alt="Colorful citrus fruits close up">
+                            </a>
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-4.png" alt="Healthy breakfast bowl with fruit">
+                            </a>
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-5.png" alt="Green leafy vegetables">
+                            </a>
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-6.png" alt="Assorted berries and grapes">
+                            </a>
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-7.png" alt="Fresh bread and bakery items">
+                            </a>
+                            <a href="#" class="blgGalleryItem">
+                                <img src="images/blog-gallery-8.png" alt="Reusable grocery bags with produce">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Recently Added -->
+                    <div class="blgSideBox">
+                        <h3 class="blgSideTitle">Recently Added</h3>
+                        <ul class="blgRecentList">
+                            <li class="blgRecentItem">
+                                <a href="#" class="blgRecentThumb">
+                                    <img src="images/blog-recently-1.png" alt="Healthy breakfast ideas article">
+                                </a>
+                                <div class="blgRecentContent">
+                                    <a href="#" class="blgRecentTitle">
+                                        5 Healthy Breakfast Ideas Using Ecobazar Fruit.
+                                    </a>
+                                    <div class="blgRecentMeta">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        <span>Apr 26, 2021</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="blgRecentItem">
+                                <a href="#" class="blgRecentThumb">
+                                    <img src="images/blog-recently-2.png" alt="Leafy greens storage article">
+                                </a>
+                                <div class="blgRecentContent">
+                                    <a href="#" class="blgRecentTitle">
+                                        How to Keep Leafy Greens Crisp All Week.
+                                    </a>
+                                    <div class="blgRecentMeta">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        <span>Apr 24, 2021</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="blgRecentItem">
+                                <a href="#" class="blgRecentThumb">
+                                    <img src="images/blog-recently-3.png" alt="Pantry organization article">
+                                </a>
+                                <div class="blgRecentContent">
+                                    <a href="#" class="blgRecentTitle">
+                                        Smart Pantry Organization for Busy Families.
+                                    </a>
+                                    <div class="blgRecentMeta">
+                                        <ion-icon name="calendar-outline"></ion-icon>
+                                        <span>Apr 22, 2021</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- RIGHT CONTENT -->
+                <div class="blgContentWrap">
+                    <!-- Top bar -->
+                    <div class="blgTopBar">
+                        <div class="blgSortArea">
+                            <span class="blgSortLabel">Sort by:</span>
+                            <div class="blgSelectWrap">
+                                <select class="blgSortSelect">
+                                    <option>Latest</option>
+                                    <option>Oldest</option>
+                                    <option>Popular</option>
+                                </select>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="blgResultCount">10 Results Found</div>
+                    </div>
+
+                    <!-- GRID (Carousel #5 track) -->
+                    <div class="blgGrid" id="ecoBlogCarousel5">
+                        <!-- CARD 1 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-1.png" alt="Storing fresh vegetables in the fridge">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">18</span>
+                                    <span class="blgCardDateMonth">NOV</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Vegetables</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Ecobazar Team</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>24 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    10 Smart Ways to Store Fresh Vegetables and Reduce Food Waste.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 2 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-2.png" alt="Weekly grocery meal plan on a table">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">12</span>
+                                    <span class="blgCardDateMonth">NOV</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Meal Prep</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Ecobazar Team</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>18 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    How to Build a Weekly Meal Plan Using Ecobazar Offers.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 3 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-3.png" alt="Citrus fruits like oranges and lemons">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">05</span>
+                                    <span class="blgCardDateMonth">NOV</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Fresh Fruit</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Nutritionist</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>12 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    7 Citrus Fruits to Boost Immunity During the Winter Season.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 4 - with play icon (video) -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-4.png" alt="Video thumbnail of Ecobazar fresh produce">
+                                <button class="blgPlayBtn">
+                                    <ion-icon name="play-outline"></ion-icon>
+                                </button>
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">29</span>
+                                    <span class="blgCardDateMonth">OCT</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Video</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Ecobazar Team</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>32 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    Watch: From Farm to Doorstep – How Ecobazar Delivers Fresh Groceries.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 5 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-img-5.png" alt="Kids tiffin box with fruits and snacks">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">21</span>
+                                    <span class="blgCardDateMonth">OCT</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Tiffin</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Ecobazar Mom</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>9 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    Healthy School Tiffin Ideas Using Ecobazar Fresh Ingredients.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 6 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-img-6.png" alt="Organic grocery products on a table">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">15</span>
+                                    <span class="blgCardDateMonth">OCT</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Healthy Living</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Ecobazar Team</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>17 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    Beginner’s Guide to Organic Grocery Shopping Online.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 7 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-img-7.png" alt="One pot dinner recipe in a pan">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">08</span>
+                                    <span class="blgCardDateMonth">OCT</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Cooking</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Chef Partner</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>22 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    5 One-Pot Dinner Recipes Using Ecobazar Pantry Staples.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 8 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-img-8.png" alt="Reading food labels on grocery products">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">01</span>
+                                    <span class="blgCardDateMonth">OCT</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Healthy Living</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Nutritionist</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>11 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    How to Read Food Labels and Make Better Grocery Choices.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 9 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-img-9.png" alt="Budget grocery basket on kitchen counter">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">25</span>
+                                    <span class="blgCardDateMonth">SEP</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Budget Tips</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Ecobazar Team</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>19 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    Build a Budget-Friendly Grocery Basket Under $20.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+
+                        <!-- CARD 10 -->
+                        <article class="blgCard">
+                            <div class="blgCardThumb">
+                                <img src="images/blog-img-10.png" alt="Brunch table with bread and bakery items">
+                                <div class="blgCardDateBox">
+                                    <span class="blgCardDateDay">19</span>
+                                    <span class="blgCardDateMonth">SEP</span>
+                                </div>
+                            </div>
+                            <div class="blgCardBody">
+                                <ul class="blgCardMeta">
+                                    <li>
+                                        <ion-icon name="folder-open-outline"></ion-icon>
+                                        <span>Bread &amp; Bakery</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <span>By Ecobazar Team</span>
+                                    </li>
+                                    <li>
+                                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                                        <span>14 Comments</span>
+                                    </li>
+                                </ul>
+                                <h3 class="blgCardTitle">
+                                    Weekend Brunch Ideas With Fresh Bread &amp; Bakery Items.
+                                </h3>
+                                <a href="blog-details.html" class="blgReadMore">
+                                    Read More
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- Pagination (used as carousel controls on desktop) -->
+                    <div class="blgPagination">
+                        <button class="blgPageBtn blgPageArrow">
+                            <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <button class="blgPageBtn active">1</button>
+                        <button class="blgPageBtn">2</button>
+                        <button class="blgPageBtn blgPageArrow">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============ BLOG LIST SECTION END ============ -->
+
+
+
+        <!-- ================== NEWSLETTER SECTION START ================== -->
+        <section class="newsletter">
+            <div class="container sub-flex">
+
+                <div class="sub-left">
+                    <h3>Subscribe to our Ecobazar newsletter</h3>
+                    <p>Get the latest grocery deals, fresh arrivals, and healthy recipe ideas delivered straight to your inbox.</p>
+                </div>
+
+                <div class="sub-right">
+                    <!-- pill-style form -->
+                    <div class="bottom-subscribe">
+                        <input type="email" placeholder="Your email address">
+                        <button class="sub-btn">Subscribe</button>
+                    </div>
+
+                    <!-- social icons with Ionicons -->
+                    <div class="sub-social">
+                        <a href="https://www.facebook.com"
+                        class="social-link active"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+
+                        <a href="https://www.twitter.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+
+                        <a href="https://www.pinterest.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Pinterest">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+
+                        <a href="https://www.instagram.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== NEWSLETTER SECTION END ================== -->
+
+
+
+        <!-- ================== FOOTER SECTION START ================== -->
+        <footer class="footer">
+            <div class="container footer-grid">
+
+                <!-- Left Column -->
+                <div class="footer-about">
+                    <img src="images/footer-logo.png"
+                        class="footer-logo"
+                        alt="Ecobazar grocery store footer logo">
+                    <p>Ecobazar is your online grocery partner for fresh produce, pantry essentials, and daily household needs, delivered with care.</p>
+
+                    <div class="footer-contact">
+                        <p>
+                            <a href="tel:+12195550114">(219) 555-0114</a>
+                            <span>or</span>
+                            <a href="mailto:support@ecobazar.com">support@ecobazar.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- My Account -->
+                <div class="footer-col">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="order-history.html">Order History</a></li>
+                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Helps -->
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-col">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=fruits-vegetables">Fruit & Vegetables</a></li>
+                        <li><a href="shop.html?category=meat-fish">Meat & Fish</a></li>
+                        <li><a href="shop.html?category=bread-bakery">Bread & Bakery</a></li>
+                        <li><a href="shop.html?category=beauty-health">Beauty & Health</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom container">
+                <p>Ecobazar eCommerce © 2025. All Rights Reserved</p>
+                <div class="payment-icons">
+                    <img src="images/applepay.png" alt="Apple Pay accepted">
+                    <img src="images/visa.png" alt="Visa payments accepted">
+                    <img src="images/mastercard.png" alt="Mastercard payments accepted">
+                    <img src="images/secure.png" alt="Secure online payment badge">
+                </div>
+            </div>
+        </footer>
+        <!-- ================== FOOTER SECTION END ================== -->
+
+
+
+        <!-- ================= SCRIPT ============== -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="assets/js/main-nav.js"></script>
+        <script src="assets/js/wishlist-global.js"></script>
+        <script src="assets/js/blog.js"></script>
+        <script src="assets/js/signinup.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // Tag active state
+                const tagBtns = document.querySelectorAll(".blgTagBtn");
+                tagBtns.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        tagBtns.forEach(b => b.classList.remove("active"));
+                        btn.classList.add("active");
+                    });
+                });
+
+                // Pagination active state
+                const pageBtns = document.querySelectorAll(".blgPageBtn");
+                pageBtns.forEach(btn => {
+                    btn.addEventListener("click", function (e) {
+                        // prevent page jump if it's a link
+                        e.preventDefault && e.preventDefault();
+                        if (btn.classList.contains("blgPageArrow")) return;
+                        pageBtns.forEach(b => b.classList.remove("active"));
+                        btn.classList.add("active");
+                    });
+                });
+
+                // Sidebar toggle on mobile
+                const filterBtn = document.querySelector(".blgFilterBtn");
+                const sidebar   = document.querySelector(".blgSidebar");
+                if (filterBtn && sidebar) {
+                    filterBtn.addEventListener("click", () => {
+                        sidebar.classList.toggle("blgSidebar-open");
+                    });
+                }
+            });
+        </script>
+        <script>
+        // ==========================
+        // BLOG LIST CAROUSEL #5
+        // ==========================
+        document.addEventListener("DOMContentLoaded", function () {
+        const carouselGrid = document.getElementById("ecoBlogCarousel5");
+        if (!carouselGrid) return;
+
+        const cards = Array.from(carouselGrid.querySelectorAll(".blgCard"));
+        if (!cards.length) return;
+
+        // Per slide 8 card on desktop / tablet
+        const PER_SLIDE = 8;
+        const totalSlides = Math.ceil(cards.length / PER_SLIDE);
+
+        const pagination = carouselGrid.parentElement.querySelector(".blgPagination");
+        const arrowBtns = pagination ? pagination.querySelectorAll(".blgPageArrow") : [];
+        const pageBtns  = pagination ? pagination.querySelectorAll(".blgPageBtn:not(.blgPageArrow)") : [];
+
+        let currentSlide = 0;
+        let mobileMode   = null; // null = not decided yet
+
+        function updatePaginationActive() {
+        if (!pagination) return;
+        pageBtns.forEach((btn, index) => {
+            if (index === currentSlide) btn.classList.add("active");
+            else btn.classList.remove("active");
+        });
+        }
+
+        function showSlide(index) {
+        currentSlide = Math.max(0, Math.min(totalSlides - 1, index));
+
+        cards.forEach((card, i) => {
+            const slideIndex = Math.floor(i / PER_SLIDE);
+            card.style.display = (slideIndex === currentSlide) ? "" : "none";
+        });
+
+        if (pagination) {
+            pagination.style.display = "flex";
+            updatePaginationActive();
+        }
+        }
+
+        function enableCarousel() {
+        mobileMode = false;
+        showSlide(currentSlide);
+        }
+
+        function disableCarousel() {
+        mobileMode = true;
+        // Show all cards normally
+        cards.forEach(card => {
+            card.style.display = "";
+        });
+        // Hide pagination on mobile since carousel is removed
+        if (pagination) {
+            pagination.style.display = "none";
+        }
+        }
+
+        function handleLayout() {
+        const width = window.innerWidth || document.documentElement.clientWidth;
+        if (width <= 768) {
+            if (mobileMode !== true) {
+                disableCarousel();
+            }
+        } else {
+            if (mobileMode !== false) {
+                enableCarousel();
+            }
+        }
+        }
+
+        // Attach events to pagination (desktop only)
+        if (pagination) {
+        // Arrows
+        if (arrowBtns[0]) {
+            arrowBtns[0].addEventListener("click", function () {
+                if (mobileMode) return;
+                showSlide(currentSlide - 1);
+            });
+        }
+        if (arrowBtns[1]) {
+            arrowBtns[1].addEventListener("click", function () {
+                if (mobileMode) return;
+                showSlide(currentSlide + 1);
+            });
+        }
+
+        // Page buttons (1, 2)
+        pageBtns.forEach((btn, index) => {
+            btn.addEventListener("click", function () {
+                if (mobileMode) return;
+                showSlide(index);
+            });
+        });
+        }
+
+        // Initial layout + resize listener
+        handleLayout();
+        window.addEventListener("resize", handleLayout);
+        });
+        </script>
+    </body>
+</html>

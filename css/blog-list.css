@@ -1,0 +1,509 @@
+/* =============== BLOG LIST SECTION =============== */
+
+.blgMainSection {
+    padding: 60px 0;
+}
+
+.blgMainContainer {
+    display: flex;
+    gap: 24px;
+}
+
+/* SIDEBAR */
+.blgSidebar {
+    width: 370px;
+    flex-shrink: 0;
+}
+
+.blgFilterBtn {
+    width: 120px;
+    height: 42px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #00B207;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 22px;
+    transition: background 0.2s, box-shadow 0.2s;
+}
+
+.blgFilterBtn ion-icon {
+    font-size: 18px;
+}
+
+.blgFilterBtn:hover {
+    background: #08a256;
+    box-shadow: 0 8px 18px rgba(13, 183, 96, 0.35);
+}
+
+/* Sidebar boxes */
+.blgSideBox {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 18px 20px 20px;
+    box-shadow: 0 15px 40px rgba(3, 33, 63, 0.06);
+    margin-bottom: 22px;
+}
+
+.blgSideTitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #111827;
+}
+
+/* Search */
+.blgSearchInner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #f3f4f6;
+    border-radius: 30px;
+    padding: 0 16px;
+}
+
+.blgSearchInner ion-icon {
+    font-size: 18px;
+    color: #9ca3af;
+}
+
+.blgSearchInput {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 0 10px 8px;
+    width: 100%;
+    font-size: 14px;
+    color: #111827;
+}
+
+.blgSearchInput::placeholder {
+    color: #9ca3af;
+}
+
+/* Categories */
+.blgCatList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blgCatList li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #4b5563;
+    padding: 4px 0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.blgCatList li:hover span:first-child {
+    color: #0db760;
+}
+
+.blgCatCount {
+    color: #9ca3af;
+}
+
+/* Tags */
+.blgTagWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.blgTagBtn {
+    border-radius: 20px;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+    font-size: 12px;
+    padding: 5px 12px;
+    cursor: pointer;
+    color: #4b5563;
+    transition: all 0.2s;
+}
+
+.blgTagBtn:hover {
+    border-color: #0db760;
+    color: #0db760;
+    background: #ecfdf5;
+}
+
+.blgTagBtn.active {
+    border-color: #00B207;
+    background: #00B207;
+    color: #fff;
+}
+
+/* Gallery */
+.blgGalleryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 6px;
+}
+
+.blgGalleryItem {
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blgGalleryItem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.25s;
+}
+
+.blgGalleryItem:hover img {
+    transform: scale(1.06);
+}
+
+/* Recent posts */
+.blgRecentList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.blgRecentItem {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.blgRecentThumb {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.blgRecentThumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.blgRecentContent {
+    flex: 1;
+}
+
+.blgRecentTitle {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #111827;
+    line-height: 1.4;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.blgRecentTitle:hover {
+    color: #0db760;
+}
+
+.blgRecentMeta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.blgRecentMeta ion-icon {
+    font-size: 14px;
+}
+
+/* RIGHT CONTENT */
+.blgContentWrap {
+    flex: 1;
+}
+
+/* Top bar */
+.blgTopBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.blgSortArea {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.blgSortLabel {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.blgSelectWrap {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    padding: 4px 32px 4px 10px;
+}
+
+.blgSortSelect {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #111827;
+    background: transparent;
+    appearance: none;
+}
+
+.blgSelectWrap ion-icon {
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+    color: #9ca3af;
+}
+
+.blgResultCount {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* GRID */
+.blgGrid {
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr;
+    gap: 20px 20px;
+}
+
+/* CARD */
+.blgCard {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.blgCardThumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.blgCardThumb img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.blgCard:hover .blgCardThumb img {
+    transform: scale(1.05);
+}
+
+/* Play button */
+.blgPlayBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.blgPlayBtn ion-icon {
+    font-size: 22px;
+    color: #0db760;
+}
+
+/* Date badge */
+.blgCardDateBox {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 8px 10px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.22);
+}
+
+.blgCardDateDay {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    color: #111827;
+    line-height: 1.1;
+}
+
+.blgCardDateMonth {
+    display: block;
+    font-size: 11px;
+    color: #9ca3af;
+    text-transform: uppercase;
+}
+
+.blgCardBody {
+    padding: 18px 20px 18px;
+}
+
+/* meta */
+.blgCardMeta {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 8px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.blgCardMeta li {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.blgCardMeta ion-icon {
+    font-size: 15px;
+}
+
+/* title */
+.blgCardTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: #111827;
+    line-height: 1.5;
+    margin: 0 0 12px;
+}
+
+/* read more */
+.blgReadMore {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #00B207;
+    text-decoration: none;
+}
+
+.blgReadMore ion-icon {
+    font-size: 16px;
+    transition: transform 0.2s;
+}
+
+.blgReadMore:hover ion-icon {
+    transform: translateX(3px);
+}
+
+/* Pagination */
+.blgPagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 28px;
+}
+
+.blgPageBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    font-size: 13px;
+    color: #6b7280;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.blgPageBtn:hover {
+    border-color: #0db760;
+    color: #0db760;
+}
+
+.blgPageBtn.active {
+    background: #00B207;
+    border-color: #00B207;
+    color: #ffffff;
+}
+
+.blgPageArrow ion-icon {
+    font-size: 16px;
+}
+
+.blgPageDots {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+/* ============ RESPONSIVE ============ */
+
+@media (max-width: 991px) {
+    .blgMainContainer {
+        flex-direction: column;
+    }
+
+    .blgSidebar {
+        width: 100%;
+        order: 1;
+    }
+
+    .blgContentWrap {
+        order: 2;
+    }
+
+    .blgGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 767px) {
+    .blgSidebar {
+        display: none;
+    }
+
+    .blgSidebar.blgSidebar-open {
+        display: block;
+    }
+
+    .blgFilterBtn {
+        margin-bottom: 16px;
+    }
+
+    .blgTopBar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .blgCardThumb img {
+        height: 210px;
+    }
+}

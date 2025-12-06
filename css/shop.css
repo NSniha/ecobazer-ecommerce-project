@@ -1,0 +1,717 @@
+/* =========================================
+   MAIN PAGE LAYOUT
+========================================= */
+.shop-container {
+    width: 92%;
+    margin: 30px auto 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* LEFT SIDEBAR */
+.sidebar {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Filter Button */
+.filter-btn {
+    width: 120px;
+    background: #00B207;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 8px;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.filter-btn img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+}
+
+/* Sidebar Box */
+.sidebar-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 25px;
+}
+
+.sidebar-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+/* Sidebar Lists */
+.category-list {
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li,
+.rating-filter li {
+    list-style: none;
+    padding: 8px 0;
+    font-size: 15px;
+    color: #333;
+}
+
+.category-list li label,
+.rating-filter li label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+/* =========================================
+   FIXED PERFECT RADIO BUTTON (FINAL)
+========================================= */
+
+.category-list input[type="radio"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+
+    background: #ffffff;
+    /* white center */
+    border: 2px solid #8e8e8e;
+    /* visible medium gray border */
+
+    cursor: pointer;
+    flex-shrink: 0;
+    position: relative;
+
+    outline: none !important;
+    box-shadow: none !important;
+
+    transition: 0.2s ease;
+}
+
+/* WHEN SELECTED */
+.category-list input[type="radio"]:checked {
+    background: #00B207 !important;
+    border-color: #00B207 !important;
+}
+
+.category-list input[type="radio"]:checked::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* =========================================
+   PRICE RANGE
+========================================= */
+.price-range {
+    width: 100%;
+    accent-color: #00B207;
+}
+
+.eco-rating-stars {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    color: #FFB400;
+    font-size: 16px;
+}
+
+.eco-rating-stars ion-icon {
+    font-size: 16px;
+}
+
+.eco-rating-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.sidebar-box p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags span {
+    background: #F4F4F4;
+    padding: 8px 16px;
+    font-size: 13px;
+    border-radius: 30px;
+    color: #222;
+    border: 1px solid #ececec;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.tags span.active,
+.tags span:hover {
+    background: #00B207;
+    color: white;
+    border-color: #00B207;
+}
+
+.discount-box {
+    border-radius: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.discount-img {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 0;
+}
+
+.sale-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    margin-bottom: 12px;
+    background: #fff;
+}
+
+.sale-item.active {
+    border: 2px solid #00B207;
+}
+
+.sale-item img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.sale-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #222;
+}
+
+.sale-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222;
+}
+
+.sale-price span {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px;
+}
+
+/* =========================================
+   HEADER WISHLIST COUNT
+========================================= */
+.eco-wishlist-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding-right: 8px;
+}
+
+.eco-wishlist-btn ion-icon {
+    font-size: 22px;
+    color: #1A1A1A;
+}
+
+.eco-wishlist-count {
+    position: absolute;
+    top: -2px;
+    right: -1px;
+    min-width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00B207;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================================
+   RIGHT AREA
+========================================= */
+.right-area {
+    width: 77%;
+}
+
+.topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 38px;
+    align-items: center;
+}
+
+.sort-section {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.sort-section select {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+
+.results {
+    color: #333;
+    font-size: 14px;
+}
+
+/* =========================================
+   PRODUCT GRID
+========================================= */
+.shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.shop-card {
+    background: #fff;
+    padding: 22px 22px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f2f2f2;
+    position: relative;
+    transition: all .25s ease;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.shop-card:hover {
+    box-shadow: 0 12px 38px rgba(0, 0, 0, 0.10);
+    transform: translateY(-3px);
+}
+
+.shop-card.active {
+    border: 2px solid #00B207;
+}
+
+.shop-categories-h {
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-img {
+    width: 100%;
+    max-width: 195px;
+    display: block;
+    margin: 0 auto 10px auto;
+    object-fit: contain;
+    text-align: center;
+    transition: .3s ease;
+}
+
+.shop-card:hover .shop-img {
+    transform: scale(1.03);
+}
+
+.shop-title {
+    font-size: 15px;
+    font-weight: 400;
+    color: #837e7e;
+    margin-bottom: 2px;
+}
+
+.shop-price {
+    font-size: 17px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 4px;
+}
+
+.shop-price span {
+    font-size: 15px;
+    text-decoration: line-through;
+    color: #9999;
+    margin-left: 6px;
+    font-weight: 400;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-bottom: 0 !important;
+}
+
+.rating ion-icon {
+    font-size: 14px;
+    color: #ffa600;
+}
+
+.lock-btn {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    padding: 7px;
+    background: #f3f3f3;
+    border-radius: 50%;
+    transition: .25s ease;
+}
+
+.lock-btn:hover {
+    background: #e8e8e8;
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.cart-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.cart-btn:hover {}
+
+.icons-top {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 8;
+}
+
+.icons-top .icon {
+    width: 34px;
+    height: 34px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.icons-top .icon ion-icon {
+    font-size: 18px;
+    color: #1A1A1A;
+}
+
+.shop-like-btn.liked ion-icon {
+    color: #e74e4e !important;
+}
+
+.icons-top .icon:hover {
+    background: #f5f5f5;
+}
+
+.out-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: #292929;
+    color: #fff;
+    padding: 6px 13px;
+    font-size: 13px;
+    border-radius: 6px;
+    font-weight: 500;
+    z-index: 5;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    background: #E84848;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 6;
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+.pagination {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 25px 0 10px;
+    margin-bottom: 60px;
+}
+
+.pagination span {
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #f1f1f1;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+}
+
+.pagination .active-page {
+    background: #00b207;
+    color: #fff;
+}
+
+.pagination button {
+    background: #f4f4f4;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media (max-width: 1024px) {
+    .shop-container {
+        width: 96%;
+        gap: 20px;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sidebar {
+        width: 30%;
+    }
+
+    .right-area {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-container {
+        flex-direction: column;
+        width: 94%;
+    }
+
+    .sidebar,
+    .right-area {
+        width: 100%;
+    }
+
+    .shop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .shop-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+}
+
+/* =========================================
+   DUAL COLOR PRICE RANGE SLIDER (GREEN PROGRESS)
+========================================= */
+.price-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 5px;
+    background: #dcdcdc;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.price-range::-webkit-slider-runnable-track {
+    height: 6px;
+    border-radius: 5px;
+    background: linear-gradient(to right,
+            #00B207 var(--val, 50%),
+            #dcdcdc var(--val, 50%));
+}
+
+.price-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #00B207;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-top: -7px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.price-range::-moz-range-track {
+    height: 6px;
+    border-radius: 5px;
+    background: #dcdcdc;
+}
+
+.price-range::-moz-range-progress {
+    height: 6px;
+    border-radius: 5px;
+    background: #00B207;
+}
+
+.price-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #00B207;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+/* =========================================
+   CUSTOM GREEN CHECKBOX (RATING FILTER)
+========================================= */
+.rating-filter input[type="checkbox"] {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    background: #ffffff;
+    border: 2px solid #8e8e8e;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: 0.2s ease;
+}
+
+.rating-filter input[type="checkbox"]:checked {
+    background: #00B207 !important;
+    border-color: #00B207 !important;
+}
+
+.rating-filter input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%) rotate(45deg);
+}
+
+
+/* =========================================
+   PREMIUM CUSTOM DROPDOWN (SORT SELECT)
+========================================= */
+.sort-section select {
+    padding: 8px 14px;
+    font-size: 16px;
+    color: #333;
+    width: 160px;
+    border-radius: 7px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%2300B207' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 16px;
+    padding-right: 40px;
+    transition: 0.2s ease;
+}
+
+.sort-section select:hover {
+    border-color: #00B207;
+}
+
+.sort-section select:focus {
+    outline: none;
+    border-color: #949694;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .rp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .eco-wishlist-count {
+        top: -7px;
+        right: -1px;
+        min-width: 15px;
+        height: 15px;
+        font-size: 10px;
+    }
+}

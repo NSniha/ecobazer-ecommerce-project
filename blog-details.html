@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ======== Primary Meta Tags ======== -->
+        <title>Blog Details – Healthy Eating & Grocery Tips | Ecobazar</title>
+        <meta name="description" content="Read this Ecobazar blog article for practical tips on healthy eating, smart grocery shopping, storage hacks and cooking ideas for fresh ingredients.">
+        <meta name="keywords" content="Ecobazar blog, grocery tips, healthy eating, food storage, cooking ideas, fresh produce guide, supermarket blog">
+        <meta name="author" content="Ecobazar">
+        <meta name="robots" content="index, follow">
+
+        <!-- ======== Canonical URL ======== -->
+        <link rel="canonical" href="https://www.ecobazar.com/blog-details.html">
+
+        <!-- ======== Favicon ======== -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <!-- ======== Open Graph / Facebook ======== -->
+        <meta property="og:title" content="Ecobazar Blog – Detailed Grocery & Food Guide">
+        <meta property="og:description" content="Dive into this Ecobazar blog post to learn more about fresh groceries, meal planning and smart kitchen habits.">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://www.ecobazar.com/blog-details.html">
+        <meta property="og:image" content="images/og-ecobazar.jpg">
+
+        <!-- ======== Twitter Card ======== -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Ecobazar Blog Details – Grocery & Kitchen Tips">
+        <meta name="twitter:description" content="Explore this Ecobazar blog article for easy, practical advice on groceries, cooking and healthy food choices.">
+        <meta name="twitter:image" content="images/og-ecobazar.jpg">
+
+        <!-- ========== Custom CSS =========== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/blog-details.css">
+        <link rel="stylesheet" href="css/shop.css">
+
+        <!-- ========== Google Fonts =========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- ================== HEADER START ================== -->
+        <header class="eco-header">
+            <div class="eco-top-bar">
+                <div class="container eco-top-inner">
+                    <div class="eco-top-location">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>
+                            Store Location: Ecobazar, 344 Lincoln Ave, Chicago, Illinois, USA
+                        </span>
+                    </div>
+
+                    <div class="eco-top-right">
+                        <button class="eco-top-link" type="button">
+                            <img src="images/usa.png" alt="USA Flag">
+                            EN
+                        </button> 
+
+                        <span class="eco-top-separator"></span>
+                        <div class="eco-top-auth-wrap">
+                            <a href="signin.html#auth-section"
+                            id="ecoSignInLink"
+                            class="eco-top-auth">
+                                Sign In
+                            </a>
+
+                            <span class="eco-top-auth-divider">/</span>
+
+                            <a href="signup.html#auth-section"
+                            id="ecoSignUpLink"
+                            class="eco-top-auth">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eco-main-header">
+                <div class="container eco-main-inner">
+                    <a href="index.html" class="eco-logo" aria-label="Ecobazar Home">
+                        <img src="images/ecobazar-logo.png" alt="Ecobazar online grocery store logo">
+                    </a>
+                    <div class="eco-search-wrap">
+                        <div class="eco-search-field">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <input
+                                type="text"
+                                placeholder="Search">
+                        </div>
+                        <button class="eco-search-btn" type="button">
+                            Search
+                        </button>
+                    </div>
+
+                    <div class="eco-header-right">
+                        <button class="eco-wishlist-btn" type="button" aria-label="Wishlist">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="eco-wishlist-count" id="ecoWishlistCount">0</span>
+                        </button>
+
+                        <span class="eco-header-divider"></span>
+
+                        <button class="eco-cart-btn" type="button" aria-label="Cart">
+                            <span class="eco-cart-badge">0</span>
+                            <ion-icon name="bag-handle-outline"></ion-icon>
+                            <div class="eco-cart-text">
+                                <span class="eco-cart-label">Shopping cart:</span>
+                                <span class="eco-cart-amount">$00.00</span>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="eco-nav-bar sub-page-navbar">
+                <div class="container eco-nav-inner">
+                    <button class="eco-nav-toggle sub-page-toggle" type="button" aria-label="Toggle Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                        <span>Menu</span>
+                    </button>
+
+                    <ul class="eco-nav-menu subpage-navitem">
+                        <button class="eco-nav-close" type="button" aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <li class="eco-nav-item eco-active">
+                            <a class="eco-nav-link" href="/">Home</a>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Shop</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="shop.html">Shop Grid</a></li>
+                                <li><a href="shop-details.html">Product Details</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Pages</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="error-404.html">404 Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Blog</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="blog-list.html">Blog List</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="eco-nav-phone sub-eco-phone">
+                        <span class="eco-phone-icon">
+                            <img src="images/PhoneCall.png" alt="PhoneCall">
+                        </span>
+                        <a href="tel:+12195550114" class="eco-phone-number">
+                            (219) 555-0114
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- ================== HEADER END ====================== -->
+
+
+        
+        <!-- ================== HERO SECTION START ================== -->
+        <section class="sub-hero-section">
+            <div class="container">
+                <div class="subpage-title-details">
+                    <div class="subpage-icon">
+                        <img src="images/home-icon.png" alt="HOME ICON">
+                        <img src="images/home-left-arrow-icon.png" alt="ARROW">
+                    </div>
+                    <div class="subpage-title">
+                        <p>Blog Details</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================== HERO SECTION END ================== -->
+
+
+
+        <!-- ====================== Blog Details Section Start ====================== -->
+        <section class="bDetails_section">
+            <div class="bDetails_container">
+                <div class="bDetails_grid">
+                    <!-- ========== LEFT: MAIN CONTENT ========== -->
+                    <div class="bDetails_main">
+                        <!-- Featured image -->
+                        <div class="bDetails_mainImg">
+                            <img src="images/blog-details-1.png" alt="Fresh oranges in a reusable basket">
+                        </div>
+
+                        <!-- Meta row -->
+                        <div class="bDetails_metaRow">
+                            <div class="bDetails_metaItem">
+                                <ion-icon name="pricetag-outline"></ion-icon>
+                                <a href="#">Fresh Fruit</a>
+                            </div>
+                            <span class="bDetails_metaDot"></span>
+                            <div class="bDetails_metaItem">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <span>By Ecobazar Team</span>
+                            </div>
+                            <span class="bDetails_metaDot"></span>
+                            <div class="bDetails_metaItem">
+                                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                                <span>24 Comments</span>
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h1 class="bDetails_title">
+                            How to Store Fresh Oranges So They Stay Juicy and Flavorful for Longer
+                        </h1>
+
+                        <!-- Author + share -->
+                        <div class="bDetails_authorRow">
+                            <div class="bDetails_authorLeft">
+                                <div class="bDetails_authorAvatar">
+                                    <img src="images/blog-author.png" alt="Ecobazar nutrition expert">
+                                </div>
+                                <div class="bDetails_authorInfo">
+                                    <h5>Cameron Williamson</h5>
+                                    <p>4 April, 2021 <span>•</span> 6 min read</p>
+                                </div>
+                            </div>
+
+                            <div class="bDetails_shareRight">
+                                <span>Share:</span>
+                                <div class="bDetails_shareIcons">
+                                    <a href="#" class="bDetails_shareBtn"><ion-icon name="logo-facebook"></ion-icon></a>
+                                    <a href="#" class="bDetails_shareBtn"><ion-icon name="logo-twitter"></ion-icon></a>
+                                    <a href="#" class="bDetails_shareBtn"><ion-icon name="logo-pinterest"></ion-icon></a>
+                                    <a href="#" class="bDetails_shareBtn"><ion-icon name="link-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Article body -->
+                        <div class="bDetails_article">
+                            <p>
+                                <strong>
+                                    Fresh citrus can stay juicy and sweet for weeks — if you store it the right way.
+                                    With a few simple tricks, you can reduce food waste and enjoy better-tasting fruit
+                                    straight from your Ecobazar basket.
+                                </strong>
+                            </p>
+                            <p>
+                                Most of us bring oranges home and leave them in a warm kitchen bowl. It looks nice, but
+                                heat and direct light make the fruit dehydrate faster. To keep oranges fresh, always remove
+                                them from plastic packaging, allow them to breathe, and store them in a cool, dry area.
+                            </p>
+                            <p>
+                                If you buy in bulk during our Ecobazar weekly deals, divide your fruit into two groups:
+                                a small bowl for easy snacking on the counter, and the rest in the refrigerator. Chilled
+                                oranges can stay fresh for up to three weeks while still keeping their bright color and
+                                natural sweetness.
+                            </p>
+
+                            <!-- Two middle images -->
+                            <div class="bDetails_twoImgWrap">
+                                <img src="images/blog-details-2.png" alt="Sliced oranges ready to serve">
+                                <img src="images/blog-details-3.png" alt="Fresh mango and citrus smoothie ingredients">
+                            </div>
+
+                            <p>
+                                For sliced oranges, always store them in an airtight glass or BPA-free container.
+                                Add a layer of reusable food wrap or lid to protect them from drying out. Try to consume
+                                cut fruit within 1–2 days for the best taste and vitamin C content.
+                            </p>
+                            <p>
+                                You can also freeze orange segments for smoothies. Peel, remove seeds, and freeze them in
+                                a single layer first, then move to a freezer-safe bag. This way, you’ll always have
+                                ready-to-blend fruit for quick breakfasts made with Ecobazar’s fresh produce.
+                            </p>
+                        </div>
+
+                        <!-- Promo banner -->
+                        <div class="bDetails_promoBanner">
+                            <img src="images/blog-details-4.png" alt="Fresh fruit offer banner at Ecobazar">
+                            <div class="bDetails_promoContent">
+                                <div class="bDetails_promoLeft">
+                                    <h6>Summer Citrus Sale</h6>
+                                    <h3>Fresh Fruit Box</h3>
+                                </div>
+                                <div class="bDetails_promoRight">
+                                    <div class="bDetails_promoCircle">
+                                        <span>56%</span>
+                                        Off
+                                    </div>
+                                    <button class="bDetails_promoBtn">
+                                        Shop Now
+                                        <ion-icon name="arrow-forward-outline"></ion-icon>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Comment form -->
+                        <div class="bDetails_commentFormWrap">
+                            <h3>Leave a Comment</h3>
+
+                            <form class="bDetails_commentForm">
+                                <div class="bDetails_formRow">
+                                    <div class="bDetails_formGroup">
+                                        <label for="bDetails_fullName">Full Name</label>
+                                        <input id="bDetails_fullName" type="text"
+                                            class="bDetails_input bDetails_input-name"
+                                            placeholder="John Carter">
+                                    </div>
+                                    <div class="bDetails_formGroup">
+                                        <label for="bDetails_email">Email</label>
+                                        <input id="bDetails_email" type="email"
+                                            class="bDetails_input bDetails_input-email"
+                                            placeholder="you@example.com">
+                                    </div>
+                                </div>
+
+                                <div class="bDetails_formGroup">
+                                    <label for="bDetails_message">Message</label>
+                                    <textarea id="bDetails_message" class="bDetails_textarea"
+                                            placeholder="Share your tips or questions about storing fresh fruit..."></textarea>
+                                </div>
+
+                                <label class="bDetails_checkboxRow">
+                                    <input type="checkbox" class="bDetails_saveCheck">
+                                    <span>Save my name and email in this browser for the next time I comment.</span>
+                                </label>
+
+                                <button type="submit" class="bDetails_submitBtn">
+                                    Post Comment
+                                    <ion-icon name="paper-plane-outline"></ion-icon>
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- Comments list -->
+                        <div class="bDetails_commentsWrap">
+                            <h3>Comments</h3>
+
+                            <div class="bDetails_commentItem">
+                                <div class="bDetails_commentAvatar">
+                                    <img src="images/blog-comment-1.png" alt="Annette Black profile">
+                                </div>
+                                <div class="bDetails_commentBody">
+                                    <div class="bDetails_commentHead">
+                                        <span class="bDetails_commentName">Annette Black</span>
+                                        <span class="bDetails_commentDate">26 Apr, 2021</span>
+                                    </div>
+                                    <p class="bDetails_commentText">
+                                        I always kept oranges on my kitchen counter. After trying the fridge method you
+                                        suggested, they’re staying fresh much longer. Thanks, Ecobazar!
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bDetails_commentItem">
+                                <div class="bDetails_commentAvatar">
+                                    <img src="images/blog-comment-2.png" alt="Devon Lane profile">
+                                </div>
+                                <div class="bDetails_commentBody">
+                                    <div class="bDetails_commentHead">
+                                        <span class="bDetails_commentName">Devon Lane</span>
+                                        <span class="bDetails_commentDate">24 Apr, 2021</span>
+                                    </div>
+                                    <p class="bDetails_commentText">
+                                        The tip about separating snack fruit and fridge fruit is so helpful.
+                                        Now my kids always have oranges ready to grab after school.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bDetails_commentItem">
+                                <div class="bDetails_commentAvatar">
+                                    <img src="images/blog-comment-3.png" alt="Jacob Jones profile">
+                                </div>
+                                <div class="bDetails_commentBody">
+                                    <div class="bDetails_commentHead">
+                                        <span class="bDetails_commentName">Jacob Jones</span>
+                                        <span class="bDetails_commentDate">20 Apr, 2021</span>
+                                    </div>
+                                    <p class="bDetails_commentText">
+                                        I didn’t know you could freeze orange segments for smoothies.
+                                        This will save me so much prep time in the mornings.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Hidden comments to show with Load More -->
+                            <div class="bDetails_commentItem bDetails_commentHidden">
+                                <div class="bDetails_commentAvatar">
+                                    <img src="images/blog-comment-4.png" alt="Jane Cooper profile">
+                                </div>
+                                <div class="bDetails_commentBody">
+                                    <div class="bDetails_commentHead">
+                                        <span class="bDetails_commentName">Jane Cooper</span>
+                                        <span class="bDetails_commentDate">18 Apr, 2021</span>
+                                    </div>
+                                    <p class="bDetails_commentText">
+                                        Please do more posts like this for other fruits – especially mangoes and berries
+                                        from Ecobazar. I want to store everything correctly.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bDetails_commentItem bDetails_commentHidden">
+                                <div class="bDetails_commentAvatar">
+                                    <img src="images/blog-comment-5.png" alt="Darrell Steward profile">
+                                </div>
+                                <div class="bDetails_commentBody">
+                                    <div class="bDetails_commentHead">
+                                        <span class="bDetails_commentName">Darrell Steward</span>
+                                        <span class="bDetails_commentDate">7 Apr, 2021</span>
+                                    </div>
+                                    <p class="bDetails_commentText">
+                                        Great read. I’m buying the Ecobazar citrus box this weekend and will follow
+                                        these storage tips.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="bDetails_loadMoreWrap">
+                                <button type="button" class="bDetails_loadMoreBtn">
+                                    Load More
+                                    <ion-icon name="chevron-down-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ========== RIGHT: SIDEBAR ========== -->
+                    <aside class="bDetails_sidebar">
+
+                        <!-- Search -->
+                        <div class="bDetails_widgetBox">
+                            <div class="bDetails_searchBox">
+                                <input type="text" class="bDetails_searchInput" placeholder="Search blog articles...">
+                                <ion-icon name="search-outline" class="bDetails_searchIcon"></ion-icon>
+                            </div>
+                        </div>
+
+                        <!-- Top Categories -->
+                        <div class="bDetails_widgetBox">
+                            <h4 class="bDetails_widgetTitle">Top Categories</h4>
+                            <ul class="bDetails_catList">
+                                <li class="bDetails_catItem">
+                                    <a href="#">Fresh Fruit</a>
+                                    <span class="bDetails_catCount">(34)</span>
+                                </li>
+                                <li class="bDetails_catItem">
+                                    <a href="#">Vegetables</a>
+                                    <span class="bDetails_catCount">(29)</span>
+                                </li>
+                                <li class="bDetails_catItem">
+                                    <a href="#">Cooking &amp; Recipes</a>
+                                    <span class="bDetails_catCount">(18)</span>
+                                </li>
+                                <li class="bDetails_catItem">
+                                    <a href="#">Snacks &amp; Tiffin</a>
+                                    <span class="bDetails_catCount">(15)</span>
+                                </li>
+                                <li class="bDetails_catItem">
+                                    <a href="#">Beverages</a>
+                                    <span class="bDetails_catCount">(21)</span>
+                                </li>
+                                <li class="bDetails_catItem">
+                                    <a href="#">Healthy Living</a>
+                                    <span class="bDetails_catCount">(17)</span>
+                                </li>
+                                <li class="bDetails_catItem">
+                                    <a href="#">Bread &amp; Bakery</a>
+                                    <span class="bDetails_catCount">(11)</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Popular Tag -->
+                        <div class="bDetails_widgetBox">
+                            <h4 class="bDetails_widgetTitle">Popular Tag</h4>
+                            <div class="bDetails_tagList">
+                                <span class="bDetails_tag">Healthy</span>
+                                <span class="bDetails_tag bDetails_tagActive">Low fat</span>
+                                <span class="bDetails_tag">Vegetarian</span>
+                                <span class="bDetails_tag">Bread</span>
+                                <span class="bDetails_tag">Kid foods</span>
+                                <span class="bDetails_tag">Vitamins</span>
+                                <span class="bDetails_tag">Snacks</span>
+                                <span class="bDetails_tag">Tiffin</span>
+                                <span class="bDetails_tag">Meal prep</span>
+                                <span class="bDetails_tag">Lunch</span>
+                                <span class="bDetails_tag">Dinner</span>
+                            </div>
+                        </div>
+
+                        <!-- Our Gallery -->
+                        <div class="bDetails_widgetBox">
+                            <h4 class="bDetails_widgetTitle">Our Gallery</h4>
+                            <div class="bDetails_galleryGrid">
+                                <img src="images/blog-gallery-1.png" alt="Fresh apples from Ecobazar">
+                                <img src="images/blog-gallery-2.png" alt="Organic vegetables in basket">
+                                <img src="images/blog-gallery-3.png" alt="Citrus fruits close up">
+                                <img src="images/blog-gallery-4.png" alt="Healthy breakfast bowl">
+                                <img src="images/blog-gallery-5.png" alt="Green leafy vegetables">
+                                <img src="images/blog-gallery-6.png" alt="Assorted berries and grapes">
+                                <img src="images/blog-gallery-7.png" alt="Fresh bread and bakery items">
+                                <img src="images/blog-gallery-8.png" alt="Reusable grocery bags with produce">
+                            </div>
+                        </div>
+
+                        <!-- Recently Added -->
+                        <div class="bDetails_widgetBox">
+                            <h4 class="bDetails_widgetTitle">Recently Added</h4>
+
+                            <div class="bDetails_recentItem">
+                                <div class="bDetails_recentThumb">
+                                    <img src="images/blog-recently-1.png" alt="Healthy breakfast ideas">
+                                </div>
+                                <div class="bDetails_recentContent">
+                                    <h6>5 Easy Breakfast Ideas Using Fresh Ecobazar Fruit.</h6>
+                                    <p><ion-icon name="calendar-outline"></ion-icon>Apr 25, 2021</p>
+                                </div>
+                            </div>
+
+                            <div class="bDetails_recentItem">
+                                <div class="bDetails_recentThumb">
+                                    <img src="images/blog-recently-2.png" alt="Fresh vegetable storage tips">
+                                </div>
+                                <div class="bDetails_recentContent">
+                                    <h6>How to Keep Leafy Greens Crisp All Week Long.</h6>
+                                    <p><ion-icon name="calendar-outline"></ion-icon>Apr 22, 2021</p>
+                                </div>
+                            </div>
+
+                            <div class="bDetails_recentItem">
+                                <div class="bDetails_recentThumb">
+                                    <img src="images/blog-recently-3.png" alt="Pantry organization for groceries">
+                                </div>
+                                <div class="bDetails_recentContent">
+                                    <h6>Smart Pantry Organization for Faster Cooking.</h6>
+                                    <p><ion-icon name="calendar-outline"></ion-icon>Apr 18, 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <!-- ====================== Blog Details Section End ====================== -->
+
+
+
+        <!-- ================== NEWSLETTER SECTION START ================== -->
+        <section class="newsletter">
+            <div class="container sub-flex">
+
+                <div class="sub-left">
+                    <h3>Subscribe to our Ecobazar newsletter</h3>
+                    <p>Get the latest grocery deals, fresh arrivals, and healthy recipe ideas delivered straight to your inbox.</p>
+                </div>
+
+                <div class="sub-right">
+                    <!-- pill-style form -->
+                    <div class="bottom-subscribe">
+                        <input type="email" placeholder="Your email address">
+                        <button class="sub-btn">Subscribe</button>
+                    </div>
+
+                    <!-- social icons with Ionicons -->
+                    <div class="sub-social">
+                        <a href="https://www.facebook.com"
+                        class="social-link active"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+
+                        <a href="https://www.twitter.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+
+                        <a href="https://www.pinterest.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Pinterest">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+
+                        <a href="https://www.instagram.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== NEWSLETTER SECTION END ================== -->
+
+
+
+        <!-- ================== FOOTER SECTION START ================== -->
+        <footer class="footer">
+            <div class="container footer-grid">
+
+                <!-- Left Column -->
+                <div class="footer-about">
+                    <img src="images/footer-logo.png"
+                        class="footer-logo"
+                        alt="Ecobazar grocery store footer logo">
+                    <p>Ecobazar is your online grocery partner for fresh produce, pantry essentials, and daily household needs, delivered with care.</p>
+
+                    <div class="footer-contact">
+                        <p>
+                            <a href="tel:+12195550114">(219) 555-0114</a>
+                            <span>or</span>
+                            <a href="mailto:support@ecobazar.com">support@ecobazar.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- My Account -->
+                <div class="footer-col">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="order-history.html">Order History</a></li>
+                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Helps -->
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-col">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=fruits-vegetables">Fruit & Vegetables</a></li>
+                        <li><a href="shop.html?category=meat-fish">Meat & Fish</a></li>
+                        <li><a href="shop.html?category=bread-bakery">Bread & Bakery</a></li>
+                        <li><a href="shop.html?category=beauty-health">Beauty & Health</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom container">
+                <p>Ecobazar eCommerce © 2025. All Rights Reserved</p>
+                <div class="payment-icons">
+                    <img src="images/applepay.png" alt="Apple Pay accepted">
+                    <img src="images/visa.png" alt="Visa payments accepted">
+                    <img src="images/mastercard.png" alt="Mastercard payments accepted">
+                    <img src="images/secure.png" alt="Secure online payment badge">
+                </div>
+            </div>
+        </footer>
+        <!-- ================== FOOTER SECTION END ================== -->
+
+
+        
+        <!-- ================= SCRIPT ============== -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="assets/js/main-nav.js"></script>
+        <script src="assets/js/wishlist-global.js"></script>
+        <script src="assets/js/signinup.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                // =======================
+                // Save name + email
+                // =======================
+                const nameInput = document.querySelector(".bDetails_input-name");
+                const emailInput = document.querySelector(".bDetails_input-email");
+                const saveCheck = document.querySelector(".bDetails_saveCheck");
+                const form = document.querySelector(".bDetails_commentForm");
+
+                // Load stored values
+                if (localStorage.getItem("bDetails_name")) {
+                    nameInput.value = localStorage.getItem("bDetails_name") || "";
+                    emailInput.value = localStorage.getItem("bDetails_email") || "";
+                    saveCheck.checked = true;
+                }
+
+                form.addEventListener("submit", function (e) {
+                    e.preventDefault(); // demo only
+                    if (saveCheck.checked) {
+                        localStorage.setItem("bDetails_name", nameInput.value);
+                        localStorage.setItem("bDetails_email", emailInput.value);
+                    } else {
+                        localStorage.removeItem("bDetails_name");
+                        localStorage.removeItem("bDetails_email");
+                    }
+                    alert("Comment submitted (demo only).");
+                });
+
+                // =======================
+                // Load more comments
+                // =======================
+                const loadMoreBtn = document.querySelector(".bDetails_loadMoreBtn");
+                if (loadMoreBtn) {
+                    loadMoreBtn.addEventListener("click", function () {
+                        document.querySelectorAll(".bDetails_commentHidden").forEach(function (item) {
+                            item.classList.remove("bDetails_commentHidden");
+                        });
+                        loadMoreBtn.parentElement.style.display = "none";
+                    });
+                }
+
+                // =======================
+                // Tag active state
+                // =======================
+                const tags = document.querySelectorAll(".bDetails_tag");
+                tags.forEach(function (tag) {
+                    tag.addEventListener("click", function () {
+                        tags.forEach(t => t.classList.remove("bDetails_tagActive"));
+                        tag.classList.add("bDetails_tagActive");
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

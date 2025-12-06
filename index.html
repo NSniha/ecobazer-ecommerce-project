@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ======== Primary Meta Tags ======== -->
+        <title>Ecobazar – Online Grocery Store for Fresh Food & Daily Essentials</title>
+        <meta name="description" content="Ecobazar is a modern online grocery store where you can shop fresh vegetables, fruits, meat, organic products and daily essentials with a smooth, secure checkout experience.">
+        <meta name="keywords" content="Ecobazar, online grocery store, grocery ecommerce, fresh vegetables, fruits, organic food, daily essentials, supermarket, online shopping">
+        <meta name="author" content="Ecobazar">
+        <meta name="robots" content="index, follow">
+
+        <!-- ======== Canonical URL ======== -->
+        <link rel="canonical" href="https://www.ecobazar.com/">
+
+        <!-- ======== Favicon ======== -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <!-- ======== Open Graph / Facebook ======== -->
+        <meta property="og:title" content="Ecobazar – Online Grocery Store for Fresh Food & Daily Essentials">
+        <meta property="og:description" content="Shop fresh groceries, fruits, vegetables and daily essentials online with Ecobazar. Clean UI, fast checkout and a modern ecommerce experience.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.ecobazar.com/">
+
+        <!-- Update to a real social preview image -->
+        <meta property="og:image" content="images/og-ecobazar.jpg">
+
+        <!-- ======== Twitter Card ======== -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Ecobazar – Online Grocery Store for Fresh Food & Daily Essentials">
+        <meta name="twitter:description" content="Ecobazar is your modern online grocery destination for fresh food, organic items and daily essentials.">
+        <meta name="twitter:image" content="images/og-ecobazar.jpg">
+
+        <!-- ========== Custom CSS =========== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/shop.css">
+
+        <!-- ========== Google Fonts =========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- ================== HEADER START ================== -->
+        <header class="eco-header">
+            <div class="eco-top-bar">
+                <div class="container eco-top-inner">
+                    <div class="eco-top-location">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>
+                            Store Location: Ecobazar, 344 Lincoln Ave, Chicago, Illinois, USA
+                        </span>
+                    </div>
+
+                    <div class="eco-top-right">
+                        <button class="eco-top-link" type="button">
+                            <img src="images/usa.png" alt="USA Flag">
+                            EN
+                        </button> 
+
+                        <span class="eco-top-separator"></span>
+
+                        <div class="eco-top-auth-wrap">
+                            <a href="signin.html#auth-section"
+                            id="ecoSignInLink"
+                            class="eco-top-auth">
+                                Sign In
+                            </a>
+
+                            <span class="eco-top-auth-divider">/</span>
+
+                            <a href="signup.html#auth-section"
+                            id="ecoSignUpLink"
+                            class="eco-top-auth">
+                                Sign Up
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="eco-main-header">
+                <div class="container eco-main-inner">
+                    <a href="index.html" class="eco-logo" aria-label="Ecobazar Home">
+                        <img src="images/ecobazar-logo.png" alt="Ecobazar online grocery store logo">
+                    </a>
+                    <div class="eco-search-wrap">
+                        <div class="eco-search-field">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <input
+                                type="text"
+                                placeholder="Search">
+                        </div>
+                        <button class="eco-search-btn" type="button">
+                            Search
+                        </button>
+                    </div>
+
+                    <div class="eco-header-right">
+                        <button class="eco-wishlist-btn" type="button" aria-label="Wishlist">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="eco-wishlist-count" id="ecoWishlistCount">0</span>
+                        </button>
+
+                        <span class="eco-header-divider"></span>
+
+                        <button class="eco-cart-btn" type="button" aria-label="Cart">
+                            <span class="eco-cart-badge">0</span>
+                            <ion-icon name="bag-handle-outline"></ion-icon>
+                            <div class="eco-cart-text">
+                                <span class="eco-cart-label">Shopping cart:</span>
+                                <span class="eco-cart-amount">$00.00</span>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="eco-nav-bar">
+                <div class="container eco-nav-inner">
+                    <button class="eco-nav-toggle" type="button" aria-label="Toggle Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                        <span>Menu</span>
+                    </button>
+
+                    <ul class="eco-nav-menu">
+                        <button class="eco-nav-close" type="button" aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <li class="eco-nav-item eco-active">
+                            <a class="eco-nav-link" href="/">Home</a>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Shop</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="shop.html">Shop Grid</a></li>
+                                <li><a href="shop-details.html">Product Details</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Pages</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="error-404.html">404 Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Blog</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="blog-list.html">Blog List</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="eco-nav-phone">
+                        <span class="eco-phone-icon">
+                            <img src="images/PhoneCall.png" alt="PhoneCall">
+                        </span>
+                        <a href="tel:+12195550114" class="eco-phone-number">
+                            (219) 555-0114
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- ================== HEADER END ====================== -->
+
+
+
+        <!-- ================== HERO SECTION START ======================= -->
+        <section class="hero-section">
+            <div class="container hero-wrapper">
+
+                <!-- LEFT BIG BANNER -->
+                <div class="hero-left">
+                    <div class="hero-left-text">
+                        <h1>Your Daily Fresh<br>Grocery Delivered</h1>
+
+                        <p class="sale-line">
+                            Save up to <span>30% every day</span>
+                        </p>
+                        <p class="sub-line">
+                            Free delivery on eligible orders in your area.
+                        </p>
+
+                        <a href="shop.html" class="shop-btn">Shop now →</a>
+                    </div>
+                </div>
+
+                <!-- RIGHT TOP BOX -->
+                <div class="hero-right-top">
+                    <span class="mini-title">WEEKLY FRESH DEAL</span>
+                    <h2>50% OFF</h2>
+                    <p class="category">Selected fruits & vegetables</p>
+
+                    <a href="shop.html" class="shop-small">Shop Now →</a>
+                </div>
+
+                <!-- RIGHT BOTTOM BOX -->
+                <div class="hero-right-bottom">
+                    <span class="mini-title-white">VALUE BUNDLE</span>
+
+                    <h3>
+                        Special grocery packs<br>
+                        for your monthly needs
+                    </h3>
+
+                    <a href="shop.html" class="shop-small-white">Shop Now →</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== HERO SECTION END ======================== -->
+
+
+
+        <!-- ================== FEATURES SECTION START ======================= -->
+        <section class="features-section">
+            <div class="container features-grid">
+
+                <div class="feature-box">
+                    <img src="images/delivery-truck 1.png" alt="Fast grocery delivery truck icon">
+                    <div>
+                        <h4>Same-Day Delivery</h4>
+                        <p>Get your groceries delivered fresh to your doorstep.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <img src="images/headphones 1.png" alt="Customer support headset icon">
+                    <div>
+                        <h4>Customer Support 24/7</h4>
+                        <p>Chat with our team anytime you need help.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <img src="images/shopping-bag.png" alt="Secure shopping bag icon">
+                    <div>
+                        <h4>100% Secure Checkout</h4>
+                        <p>Protected payments for every Ecobazar order.</p>
+                    </div>
+                </div>
+
+                <div class="feature-box">
+                    <img src="images/package.png" alt="Package with money-back guarantee icon">
+                    <div>
+                        <h4>Easy Returns & Refunds</h4>
+                        <p>Hassle-free returns within 30 days of purchase.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== FEATURES SECTION END ======================== -->
+
+
+
+        <!-- ================== CATEGORIES FEATURES SECTION START ======================== -->
+        <section class="categories-section">
+            <div class="container">
+
+                <div class="cat-header">
+                    <h2>Popular Categories</h2>
+                    <a href="#" class="view-all">View All →</a>
+                </div>
+
+                <div class="categories-grid">
+
+                    <div class="cat-box" data-category="fresh-fruit">
+                        <img src="images/cat-fresh-fruits.png" alt="Fresh fruit category icon">
+                        <p>Fresh Fruit</p>
+                    </div>
+
+                    <div class="cat-box" data-category="vegetables">
+                        <img src="images/cat-fresh-vegetables.png" alt="Fresh vegetables category icon">
+                        <p>Fresh Vegetables</p>
+                    </div>
+
+                    <div class="cat-box" data-category="meat-fish">
+                        <img src="images/cat-meat-fish.png" alt="Meat and fish category icon">
+                        <p>Meat &amp; Fish</p>
+                    </div>
+
+                    <div class="cat-box" data-category="snacks">
+                        <img src="images/cat-snacks.png" alt="Snacks category icon">
+                        <p>Snacks</p>
+                    </div>
+
+                    <div class="cat-box" data-category="beverages">
+                        <img src="images/cat-beverages.png" alt="Beverages category icon">
+                        <p>Beverages</p>
+                    </div>
+
+                    <div class="cat-box" data-category="beauty-health">
+                        <img src="images/cat-beauty-health.png" alt="Beauty and health products category icon">
+                        <p>Beauty &amp; Health</p>
+                    </div>
+
+                    <div class="cat-box" data-category="bread-bakery">
+                        <img src="images/cat-bread-bakery.png" alt="Bread and bakery category icon">
+                        <p>Bread &amp; Bakery</p>
+                    </div>
+
+                    <div class="cat-box" data-category="baking-needs">
+                        <img src="images/cat-baking-needs.png" alt="Baking needs category icon">
+                        <p>Baking Needs</p>
+                    </div>
+
+                    <div class="cat-box" data-category="cooking">
+                        <img src="images/cat-cooking-essentials.png" alt="Cooking essentials category icon">
+                        <p>Cooking</p>
+                    </div>
+
+                    <div class="cat-box" data-category="diabetic-food">
+                        <img src="images/cat-diabetic-food.png" alt="Diabetic food category icon">
+                        <p>Diabetic Food</p>
+                    </div>
+
+                    <div class="cat-box" data-category="dish-detergents">
+                        <img src="images/cat-dish-detergents.png" alt="Dish detergents category icon">
+                        <p>Dish Detergents</p>
+                    </div>
+
+                    <div class="cat-box" data-category="oil">
+                        <img src="images/cat-oil.png" alt="Cooking oil category icon">
+                        <p>Oil</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================== CATEGORIES FEATURES SECTION END ======================== -->
+
+
+
+        <!-- ================== POPULAR PRODUCTS SECTION START ================== -->
+        <section class="products-section">
+            <div class="container">
+                <div class="product-header">
+                    <h2>Popular Fresh Picks</h2>
+                    <a href="shop.html" class="view-all">View All Products →</a>
+                </div>
+
+                <div class="products-grid">
+
+                    <!-- CARD 1 -->
+                    <div class="product-card" 
+                        data-id="301" 
+                        data-name="Fresh Green Apple" 
+                        data-price="14.99" 
+                        data-image="images/prod-green-apple.png">
+
+                        <span class="sale-badge">Sale 50%</span>
+
+                        <div class="product-food-img">
+                            <img src="images/prod-green-apple.png" alt="Fresh green apples from Ecobazar">
+                        </div>
+
+                        <h4>Fresh Green Apple</h4>
+
+                        <div class="price">
+                            <span class="new-price">$14.99</span>
+                            <span class="old-price">$20.99</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="product-card"
+                        data-id="302"
+                        data-name="Malta"
+                        data-price="20.00"
+                        data-image="images/prod-orange-malta.png">
+
+                        <div class="product-food-img">
+                            <img src="images/prod-orange-malta.png" alt="Malta oranges">
+                        </div>
+
+                        <h4>Malta</h4>
+
+                        <div class="price">
+                            <span class="new-price">$20.00</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="product-card active"
+                        data-id="303"
+                        data-name="Chinese Cabbage"
+                        data-price="12.00"
+                        data-image="images/prod-chinese-cabbage.png">
+
+                        <div class="actions">
+                            <button class="action-btn add-wishlist" type="button">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                            <button class="action-btn" type="button">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="product-food-img">
+                            <img src="images/prod-chinese-cabbage.png" alt="Fresh Chinese cabbage">
+                        </div>
+
+                        <h4>Chinese Cabbage</h4>
+
+                        <div class="price">
+                            <span class="new-price">$12.00</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="product-card"
+                        data-id="304"
+                        data-name="Red Tomato"
+                        data-price="9.00"
+                        data-image="images/prod-green-tomato.png">
+
+                        <div class="product-food-img">
+                            <img src="images/prod-green-tomato.png" alt="Crisp red tomato">
+                        </div>
+
+                        <h4>Red Tomato</h4>
+
+                        <div class="price">
+                            <span class="new-price">$9.00</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 5 -->
+                    <div class="product-card"
+                        data-id="305"
+                        data-name="Fresh Chicken Breast"
+                        data-price="23.00"
+                        data-image="images/prod-chicken-breast.png">
+
+                        <div class="product-food-img">
+                            <img src="images/prod-chicken-breast.png" alt="Fresh boneless chicken breast fillets">
+                        </div>
+
+                        <h4>Fresh Chicken Breast</h4>
+
+                        <div class="price">
+                            <span class="new-price">$23.00</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 6 -->
+                    <div class="product-card"
+                        data-id="306"
+                        data-name="Sweet Corn"
+                        data-price="20.00"
+                        data-image="images/prod-corn.png">
+
+                        <div class="product-food-img">
+                            <img src="images/prod-corn.png" alt="Fresh sweet corn">
+                        </div>
+
+                        <h4>Sweet Corn</h4>
+
+                        <div class="price">
+                            <span class="new-price">$20.00</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 7 -->
+                    <div class="product-card"
+                        data-id="307"
+                        data-name="Green Capsicum"
+                        data-price="9.00"
+                        data-image="images/prod-green-capsicum.png">
+
+                        <div class="product-food-img">
+                            <img src="images/prod-green-capsicum.png" alt="Green capsicum bell peppers">
+                        </div>
+
+                        <h4>Green Capsicum</h4>
+
+                        <div class="price">
+                            <span class="new-price">$9.00</span>
+                            <span class="old-price">$20.99</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 8 -->
+                    <div class="product-card"
+                        data-id="308"
+                        data-name="Atlantic Salmon Fillet"
+                        data-price="17.03"
+                        data-image="images/prod-salmon-fillet.png">
+
+                        <span class="sale-badge">Sale 30%</span>
+
+                        <div class="product-food-img">
+                            <img src="images/prod-salmon-fillet.png" alt="Fresh Atlantic salmon fillet">
+                        </div>
+
+                        <h4>Atlantic Salmon Fillet</h4>
+
+                        <div class="price">
+                            <span class="new-price">$17.03</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-half-outline"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                        <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 9 -->
+                    <div class="product-card"
+                        data-id="309"
+                        data-name="Fresh Cauliflower"
+                        data-price="12.00"
+                        data-image="images/prod-cauliflower.png">
+
+                        <div class="product-food-img">
+                            <img src="images/prod-cauliflower.png" alt="Fresh white cauliflower">
+                        </div>
+
+                        <h4>Fresh Cauliflower</h4>
+
+                        <div class="price">
+                            <span class="new-price">$12.00</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 10 -->
+                    <div class="product-card"
+                        data-id="310"
+                        data-name="Eggplant"
+                        data-price="18.50"
+                        data-image="images/prod-brinjal.png">
+
+                        <div class="product-food-img">
+                            <img src="images/prod-brinjal.png" alt="Fresh Eggplant">
+                        </div>
+
+                        <h4>Eggplant</h4>
+
+                        <div class="price">
+                            <span class="new-price">$18.50</span>
+                        </div>
+
+                        <div class="rating">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="cart-icon add-cart" type="button">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================== POPULAR PRODUCTS SECTION END ==================== -->
+
+
+
+       <!-- ================== PROMO SECTION START ======================== -->
+        <section class="promo-section">
+            <div class="container promo-grid">
+
+                <!-- CARD 1 – TIMER DEAL -->
+                <div class="promo-card blue-card">
+                    <div class="promo-content">
+                        <span class="promo-top">LIMITED TIME OFFER</span>
+
+                        <h2>Weekly Fresh Deal</h2>
+
+                        <div class="timer" id="promoTimer">
+                            <div>
+                                <span class="time-days">00</span>
+                                <small>DAYS</small>
+                            </div>
+                            <div>
+                                <span class="time-hours">00</span>
+                                <small>HOURS</small>
+                            </div>
+                            <div>
+                                <span class="time-mins">00</span>
+                                <small>MINS</small>
+                            </div>
+                            <div>
+                                <span class="time-secs">00</span>
+                                <small>SECS</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="shop.html" class="promo-btn">Shop Fresh Deals →</a>
+                </div>
+
+                <!-- CARD 2 – MEAT -->
+                <div class="promo-card black-card">
+                    <div class="promo-content">
+                        <span class="promo-top">LEAN &amp; HEALTHY</span>
+
+                        <h2>Low-Fat Meat Cuts</h2>
+                        <p class="price-line">
+                            Starting from <span>$79.99</span>
+                        </p>
+                        <p class="promo-subline">
+                            High-protein, trimmed meat for lighter, healthier meals.
+                        </p>
+                    </div>
+
+                    <a href="shop.html" class="promo-btn">Shop Low-Fat Meat →</a>
+                </div>
+
+                <!-- CARD 3 – FRUIT -->
+                <div class="promo-card yellow-card">
+                    <div class="promo-content">
+                        <span class="promo-top">SUMMER FRESH</span>
+
+                        <h2>100% Fresh Fruit</h2>
+                        <p class="discount-line">
+                            Up to <span>64% OFF</span>
+                        </p>
+                        <p class="promo-subline">
+                            Juicy seasonal fruits perfect for snacks, smoothies and desserts.
+                        </p>
+                    </div>
+
+                    <a href="shop.html" class="promo-btn">Shop Fruit Offers →</a>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== PROMO SECTION END ======================== -->
+
+
+
+        <!-- ================== HOT DEALS SECTION END ======================== -->
+        <section class="hot-deals">
+            <div class="container">
+
+                <!-- Header -->
+                <div class="hd-header">
+                    <h2>Hot Deals</h2>
+                    <a href="shop.html" class="view-all">View All →</a>
+                </div>
+
+                <div class="hot-grid">
+
+                    <!-- BIG MAIN CARD -->
+                    <div class="big-card">
+                        <div class="badge-row">
+                            <span class="badge red">Sale 50%</span>
+                            <span class="badge blue">Best Sale</span>
+                        </div>
+                        <img src="images/veg-main-peas.png" class="big-img"  alt="green peas">
+
+                        <div class="big-actions">
+                            <span class="circle">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </span>
+
+                            <button class="add-btn">
+                                Add to Cart
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </button>
+
+                            <span class="circle">
+                                <ion-icon name="eye-outline"></ion-icon>
+                            </span>
+                        </div>
+
+                        <h3 class="big-title">Green Peas</h3>
+
+                        <div class="price-row">
+                            <span class="new">$12.00</span>
+                            <span class="old">$24.00</span>
+                        </div>
+
+                        <div class="rating-row">
+                            <span class="stars">
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star"></ion-icon>
+                                <ion-icon name="star-outline"></ion-icon>
+                            </span>
+                            <span class="feedback">(524 Feedback)</span>
+                        </div>
+
+                        <p class="offer-label">Hurry up! Offer ends in:</p>
+
+                        <div class="countdown">
+                            <div class="countdown-flex"><span>01</span><small>DAYS</small></div>
+                            <div class="countdown-flex"><span>23</span><small>HOURS</small></div>
+                            <div class="countdown-flex"><span>34</span><small>MINS</small></div>
+                            <div class="countdown-flex"><span>57</span><small>SECS</small></div>
+                        </div>
+                    </div>
+
+                    <!-- ROW 1 -->
+                    <div class="p-card">
+                        <img src="images/prod-chinese-cabbage.png"
+                            class="p-img"
+                            alt="Chinese cabbage">
+                        <h4>Chinese cabbage</h4>
+                        <p class="p-price">$12.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/prod-brinjal.png"
+                            class="p-img"
+                            alt="Eggplant">
+                        <h4>Eggplant</h4>
+                        <p class="p-price">$34.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/veg-green-lettuce.png"
+                            class="p-img"
+                            alt="Green lettuce">
+                        <h4>Green Lettuce</h4>
+                        <p class="p-price">$9.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/veg-red-onion.png"
+                            class="p-img"
+                            alt="Red onion">
+                        <h4>Red Onion</h4>
+                        <p class="p-price">$12.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <!-- ROW 2 -->
+                    <div class="p-card">
+                        <span class="badge red small">Sale 50%</span>
+                        <img src="images/veg-red-capsicum.png"
+                            class="p-img"
+                            alt="Red capsicum">
+                        <h4>Red Capsicum</h4>
+                        <p class="p-price">$9.00 <del>$20.99</del></p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/veg-butternut-squash.png"
+                            class="p-img"
+                            alt="Butternut squash">
+                        <h4>Butternut Squash</h4>
+                        <p class="p-price">$34.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/veg-cucumber.png"
+                            class="p-img"
+                            alt="Cucumber">
+                        <h4>Cucumber</h4>
+                        <p class="p-price">$12.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/veg-potatoes.png"
+                            class="p-img"
+                            alt="Potatoes">
+                        <h4>Potatoes</h4>
+                        <p class="p-price">$12.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <!-- ROW 3 -->
+                    <div class="p-card">
+                        <img src="images/veg-fresh-corn.png"
+                            class="p-img"
+                            alt="Fresh corn with tomatoes and chili">
+                        <h4>Fresh Corn</h4>
+                        <p class="p-price">$12.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/veg-fresh-coriander.png"
+                            class="p-img"
+                            alt="Fresh coriander leaves">
+                        <h4>Fresh Coriander</h4>
+                        <p class="p-price">$9.00 <del>$20.99</del></p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <span class="badge blue small">Sale 69%</span>
+                        <img src="images/veg-red-cabbage.png"
+                            class="p-img"
+                            alt="Red cabbage">
+                        <h4>Red Cabbage</h4>
+                        <p class="p-price">$34.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/veg-green-chili.png"
+                            class="p-img"
+                            alt="Green chili peppers">
+                        <h4>Green Chili</h4>
+                        <p class="p-price">$18.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                    <div class="p-card">
+                        <img src="images/prod-cauliflower.png"
+                            class="p-img"
+                            alt="Cauliflower">
+                        <h4>Cauliflower</h4>
+                        <p class="p-price">$20.00</p>
+                        <div class="stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                        </div>
+                        <ion-icon class="lock" name="cart-outline"></ion-icon>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================== HOT DEALS SECTION END ======================== -->
+
+
+
+        <!-- ================== ECO BANNER SECTION END ======================== -->
+        <section class="eco-sale-banner container">
+            <div class="eco-sale-inner">
+                <span class="eco-sale-label">WEEKLY FRESH DEALS</span>
+                <h2><strong>50%</strong> OFF</h2>
+
+                <p class="eco-sale-text">
+                    Save big on fresh vegetables & groceries.<br>
+                    Same-day delivery and 100% freshness guarantee.
+                </p>
+
+                <a href="shop.html" class="eco-sale-btn">
+                    Shop Fresh Now <span>→</span>
+                </a>
+            </div>
+        </section>
+        <!-- ================== ECO BANNER SECTION END ======================== -->
+
+
+
+        <!-- ================= FEATURE FRESH FRUIT SECTION START =============== -->
+        <section class="featured-products">
+            <div class="container">
+
+                <div class="fp-header">
+                    <h2>Fresh Fruit Collection</h2>
+                    <a href="shop.html" class="view-all">Browse All Fruits →</a>
+                </div>
+
+                <div class="custom-slider-wrapper">
+
+                    <button class="nav-btn prev-btn">❮</button>
+
+                    <div class="custom-slider" id="productCarousel">
+                        <div class="slide-track">
+
+                            <!-- CARD 1 -->
+                            <div class="fp-card-item"
+                                data-id="901"
+                                data-name="Fresh Avocado"
+                                data-price="9.00"
+                                data-image="images/fruit-avocado.png">
+
+                                <span class="sale-badge">Sale 50%</span>
+
+                                <div class="card-icons">
+                                    <button type="button" class="icon-btn wishlist-btn">
+                                        <ion-icon name="heart-outline"></ion-icon>
+                                    </button>
+
+                                    <button type="button" class="icon-btn quickview-btn">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </button>
+                                </div>
+
+                                <img src="images/fruit-avocado.png" alt="Fresh Avocado">
+
+                                <h4>Fresh Avocado</h4>
+
+                                <div class="price">
+                                    <span class="new">$9.00</span>
+                                </div>
+
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+
+                                <button class="cart-btn">
+                                    <ion-icon name="cart-outline"></ion-icon>
+                                </button>
+                            </div>
+
+                            <!-- CARD 2 -->
+                            <div class="fp-card-item"
+                                data-id="902"
+                                data-name="Juicy Mango"
+                                data-price="20.00"
+                                data-image="images/fruit-mango.png">
+
+                                <div class="card-icons">
+                                    <button class="icon-btn wishlist-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                    <button class="icon-btn quickview-btn"><ion-icon name="eye-outline"></ion-icon></button>
+                                </div>
+
+                                <img src="images/fruit-mango.png" alt="Juicy Mango">
+
+                                <h4>Juicy Mango</h4>
+
+                                <div class="price">
+                                    <span class="new">$20.00</span>
+                                </div>
+
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+
+                                <button class="cart-btn"><ion-icon name="cart-outline"></ion-icon></button>
+                            </div>
+
+                            <!-- CARD 3 -->
+                            <div class="fp-card-item"
+                                data-id="903"
+                                data-name="Black Berry"
+                                data-price="34.00"
+                                data-image="images/fruit-cherry-blackberry.png">
+
+                                <div class="card-icons">
+                                    <button class="icon-btn wishlist-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                    <button class="icon-btn quickview-btn"><ion-icon name="eye-outline"></ion-icon></button>
+                                </div>
+
+                                <img src="images/fruit-cherry-blackberry.png" alt="Black Berry">
+
+                                <h4>Black Berry</h4>
+
+                                <div class="price">
+                                    <span class="new">$34.00</span>
+                                </div>
+
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+
+                                <button class="cart-btn"><ion-icon name="cart-outline"></ion-icon></button>
+                            </div>
+
+                            <!-- CARD 4 -->
+                            <div class="fp-card-item"
+                                data-id="904"
+                                data-name="Fresh Apple"
+                                data-price="14.99"
+                                data-image="images/fruit-green-apple.png">
+
+                                <div class="card-icons">
+                                    <button class="icon-btn wishlist-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                    <button class="icon-btn quickview-btn"><ion-icon name="eye-outline"></ion-icon></button>
+                                </div>
+
+                                <img src="images/fruit-green-apple.png" alt="Fresh Apple">
+
+                                <h4>Fresh Apple</h4>
+
+                                <div class="price">
+                                    <span class="new">$14.99</span>
+                                    <span class="old">$20.99</span>
+                                </div>
+
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+
+                                <button class="cart-btn"><ion-icon name="cart-outline"></ion-icon></button>
+                            </div>
+
+                            <!-- CARD 5 -->
+                            <div class="fp-card-item"
+                                data-id="905"
+                                data-name="Pomegranate"
+                                data-price="12.00"
+                                data-image="images/fruit-pomegranate.png">
+
+                                <div class="card-icons">
+                                    <button class="icon-btn wishlist-btn"><ion-icon name="heart-outline"></ion-icon></button>
+                                    <button class="icon-btn quickview-btn"><ion-icon name="eye-outline"></ion-icon></button>
+                                </div>
+
+                                <img src="images/fruit-pomegranate.png" alt="Pomegranate">
+
+                                <h4>Pomegranate</h4>
+
+                                <div class="price">
+                                    <span class="new">$12.00</span>
+                                </div>
+
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+
+                                <button class="cart-btn"><ion-icon name="cart-outline"></ion-icon></button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="nav-btn next-btn">❯</button>
+
+                </div>
+            </div>
+        </section>
+        <!-- ================== FEATURE FRESH FRUIT SECTION END ============ -->
+
+
+
+        <!-- ================== BLOG SECTION START ======================== -->
+        <section class="latest-news">
+            <div class="container">
+                <h2 class="news-title">Latest News</h2>
+
+                <div class="news-grid">
+
+                    <!-- CARD 1 -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="images/blog-img-1.png">
+                            <div class="date-badge">
+                                <span class="day">18</span>
+                                <span class="month">NOV</span>
+                            </div>
+                        </div>
+
+                        <div class="meta-row">
+                            <span><img src="images/category.png"> Food</span>
+                            <span><img src="images/user.png"> By Admin</span>
+                            <span><img src="images/comment.png"> 65 Comments</span>
+                        </div>
+
+                        <h3 class="news-heading active">
+                            Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.
+                        </h3>
+
+                        <a href="blog-list.html" class="read-more">
+                            Read More <img src="images/arrow-green.png">
+                        </a>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="images/blog-img-2.png">
+                            <div class="date-badge">
+                                <span class="day">29</span>
+                                <span class="month">JAN</span>
+                            </div>
+                        </div>
+
+                        <div class="meta-row">
+                            <span><img src="images/category.png"> Food</span>
+                            <span><img src="images/user.png"> By Admin</span>
+                            <span><img src="images/comment.png"> 65 Comments</span>
+                        </div>
+
+                        <h3 class="news-heading">
+                            Eget lobortis lorem lacinia. Vivamus pharetra semper,
+                        </h3>
+
+                        <a href="blog-list.html" class="read-more">
+                            Read More <img src="images/arrow-green.png">
+                        </a>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="news-card">
+                        <div class="news-img">
+                            <img src="images/blog-img-3.png">
+                            <div class="date-badge">
+                                <span class="day">21</span>
+                                <span class="month">FEB</span>
+                            </div>
+                        </div>
+
+                        <div class="meta-row">
+                            <span><img src="images/category.png"> Food</span>
+                            <span><img src="images/user.png"> By Admin</span>
+                            <span><img src="images/comment.png"> 65 Comments</span>
+                        </div>
+
+                        <h3 class="news-heading">
+                            Maecenas blandit risus elementum mauris malesuada.
+                        </h3>
+
+                        <a href="blog-list.html" class="read-more">
+                            Read More <img src="images/arrow-green.png">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== BLOG SECTION END ======================== -->
+
+
+
+        <!-- ================== TESTIMONIALS SECTION END ======================== -->
+        <section class="testimonials">
+            <div class="container">
+
+                <div class="testi-header-row">
+                    <h2 class="testi-title">What Our Customers Say</h2>
+
+                    <div class="testi-nav">
+                        <button class="nav-left" type="button" aria-label="Previous testimonial">
+                            <ion-icon name="arrow-back-outline"></ion-icon>
+                        </button>
+                        <button class="nav-right" type="button" aria-label="Next testimonial">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- UNIQUE SLIDER -->
+                <div class="testi-slider" id="ecoTestiSlider2">
+                    <div class="testi-track">
+
+                        <!-- CARD 1 -->
+                        <article class="testi-card">
+                            <div class="quote-icon">
+                                <img src="images/quote.png" alt="Quote">
+                            </div>
+
+                            <p class="testi-text">
+                                “Ecobazar always delivers my fruits and vegetables fresh and on time.
+                                The quality is consistent and the prices are great.”
+                            </p>
+
+                            <div class="testi-footer">
+                                <img src="images/pro-review.png" class="user-img" alt="Robert Fox">
+                                <div>
+                                    <h4 class="user-name">Robert Fox</h4>
+                                    <span class="user-role">Regular Customer</span>
+                                </div>
+                                <div class="testi-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 2 -->
+                        <article class="testi-card">
+                            <div class="quote-icon">
+                                <img src="images/quote.png" alt="Quote">
+                            </div>
+
+                            <p class="testi-text">
+                                “I love how easy it is to order mangoes, apples and berries.
+                                The packing is neat and everything arrives in perfect condition.”
+                            </p>
+
+                            <div class="testi-footer">
+                                <img src="images/pro-review.png" class="user-img" alt="Dianne Russell">
+                                <div>
+                                    <h4 class="user-name">Dianne Russell</h4>
+                                    <span class="user-role">Fruit Lover</span>
+                                </div>
+                                <div class="testi-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 3 -->
+                        <article class="testi-card">
+                            <div class="quote-icon">
+                                <img src="images/quote.png" alt="Quote">
+                            </div>
+
+                            <p class="testi-text">
+                                “Their same-day delivery and fresh stock make grocery shopping stress-free.
+                                I especially like the avocados and cherries from Ecobazar.”
+                            </p>
+
+                            <div class="testi-footer">
+                                <img src="images/pro-review.png" class="user-img" alt="Eleanor Pena">
+                                <div>
+                                    <h4 class="user-name">Eleanor Pena</h4>
+                                    <span class="user-role">Online Shopper</span>
+                                </div>
+                                <div class="testi-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 4 -->
+                        <article class="testi-card">
+                            <div class="quote-icon">
+                                <img src="images/quote.png" alt="Quote">
+                            </div>
+
+                            <p class="testi-text">
+                                “Great variety of organic vegetables. The spinach, lettuce and herbs are
+                                always super fresh and stay crisp for days.”
+                            </p>
+
+                            <div class="testi-footer">
+                                <img src="images/pro-review.png" class="user-img" alt="Jacob Jones">
+                                <div>
+                                    <h4 class="user-name">Jacob Jones</h4>
+                                    <span class="user-role">Health-Conscious Buyer</span>
+                                </div>
+                                <div class="testi-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 5 -->
+                        <article class="testi-card">
+                            <div class="quote-icon">
+                                <img src="images/quote.png" alt="Quote">
+                            </div>
+
+                            <p class="testi-text">
+                                “Ecobazar saves me a lot of time. I place one order for the week and
+                                everything from fruits to pantry items arrives together.”
+                            </p>
+
+                            <div class="testi-footer">
+                                <img src="images/pro-review.png" class="user-img" alt="Courtney Henry">
+                                <div>
+                                    <h4 class="user-name">Courtney Henry</h4>
+                                    <span class="user-role">Busy Mom</span>
+                                </div>
+                                <div class="testi-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- CARD 6 -->
+                        <article class="testi-card">
+                            <div class="quote-icon">
+                                <img src="images/quote.png" alt="Quote">
+                            </div>
+
+                            <p class="testi-text">
+                                “The website is easy to use, delivery is fast and support is friendly.
+                                Highly recommend Ecobazar for weekly grocery shopping.”
+                            </p>
+
+                            <div class="testi-footer">
+                                <img src="images/pro-review.png" class="user-img" alt="Theresa Webb">
+                                <div>
+                                    <h4 class="user-name">Theresa Webb</h4>
+                                    <span class="user-role">Verified Buyer</span>
+                                </div>
+                                <div class="testi-rating">
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star"></ion-icon>
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== TESTIMONIALS SECTION END ======================== -->
+
+
+
+        <!-- ================== BRAND SECTION START ======================== -->
+        <section class="brand-logos">
+            <div class="container">
+                <div class="container brand-flex">
+                    <img src="images/steps.png"   alt="Steps grocery brand logo">
+                    <img src="images/mango.png"   alt="Mango juice brand logo">
+                    <img src="images/food.png"    alt="Food company brand logo">
+                    <img src="images/bookoff.png" alt="Book Off store brand logo">
+                    <img src="images/gseries.png" alt="G Series brand logo">
+                </div>
+            </div>
+        </section>
+        <!-- ================== BRAND SECTION END ======================== -->
+
+
+
+        <!-- ================== INSTAGRAM SECTION START ======================== -->
+        <section class="instagram">
+            <div class="container">
+                <h2 class="insta-title">Follow us on Instagram</h2>
+
+                <div class="insta-grid">
+                    <img src="images/i1.png" alt="Ecobazar Instagram photo 1">
+                    <img src="images/i2.png" alt="Ecobazar Instagram photo 2">
+                    <img src="images/i3.png" alt="Ecobazar Instagram photo 3">
+                    <img src="images/i4.png" alt="Ecobazar Instagram photo 4">
+                    <img src="images/i5.png" alt="Ecobazar Instagram photo 5">
+                    <img src="images/i6.png" alt="Ecobazar Instagram photo 6">
+                </div>
+            </div>
+        </section>
+        <!-- ================== INSTAGRAM SECTION END ======================== -->
+
+
+
+        <!-- ================== NEWSLETTER SECTION START ================== -->
+        <section class="newsletter">
+            <div class="container sub-flex">
+
+                <div class="sub-left">
+                    <h3>Subscribe to our Ecobazar newsletter</h3>
+                    <p>Get the latest grocery deals, fresh arrivals, and healthy recipe ideas delivered straight to your inbox.</p>
+                </div>
+
+                <div class="sub-right">
+                    <!-- pill-style form -->
+                    <div class="bottom-subscribe">
+                        <input type="email" placeholder="Your email address">
+                        <button class="sub-btn">Subscribe</button>
+                    </div>
+
+                    <!-- social icons with Ionicons -->
+                    <div class="sub-social">
+                        <a href="https://www.facebook.com"
+                        class="social-link active"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+
+                        <a href="https://www.twitter.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+
+                        <a href="https://www.pinterest.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Pinterest">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+
+                        <a href="https://www.instagram.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== NEWSLETTER SECTION END ================== -->
+
+
+
+        <!-- ================== FOOTER SECTION START ================== -->
+        <footer class="footer">
+            <div class="container footer-grid">
+
+                <!-- Left Column -->
+                <div class="footer-about">
+                    <img src="images/footer-logo.png"
+                        class="footer-logo"
+                        alt="Ecobazar grocery store footer logo">
+                    <p>Ecobazar is your online grocery partner for fresh produce, pantry essentials, and daily household needs, delivered with care.</p>
+
+                    <div class="footer-contact">
+                        <p>
+                            <a href="tel:+12195550114">(219) 555-0114</a>
+                            <span>or</span>
+                            <a href="mailto:support@ecobazar.com">support@ecobazar.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- My Account -->
+                <div class="footer-col">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="order-history.html">Order History</a></li>
+                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Helps -->
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-col">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=fruits-vegetables">Fruit & Vegetables</a></li>
+                        <li><a href="shop.html?category=meat-fish">Meat & Fish</a></li>
+                        <li><a href="shop.html?category=bread-bakery">Bread & Bakery</a></li>
+                        <li><a href="shop.html?category=beauty-health">Beauty & Health</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom container">
+                <p>Ecobazar eCommerce © 2025. All Rights Reserved</p>
+                <div class="payment-icons">
+                    <img src="images/applepay.png" alt="Apple Pay accepted">
+                    <img src="images/visa.png" alt="Visa payments accepted">
+                    <img src="images/mastercard.png" alt="Mastercard payments accepted">
+                    <img src="images/secure.png" alt="Secure online payment badge">
+                </div>
+            </div>
+        </footer>
+        <!-- ================== FOOTER SECTION END ================== -->
+
+
+
+        <!-- ================= SCRIPT ============== -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="assets/js/main-nav.js"></script>
+        <script>
+            // -------------- TESTIMONIALS SLIDER --------------
+            document.addEventListener("DOMContentLoaded", function () {
+                const testiSections = document.querySelectorAll(".testimonials");
+
+                testiSections.forEach(function (section) {
+                    const slider  = section.querySelector(".testi-slider");
+                    const track   = slider ? slider.querySelector(".testi-track") : null;
+                    const cards   = slider ? Array.from(slider.querySelectorAll(".testi-card")) : [];
+                    const prevBtn = section.querySelector(".testi-nav .nav-left");
+                    const nextBtn = section.querySelector(".testi-nav .nav-right");
+
+                    if (!slider || !track || cards.length === 0 || !prevBtn || !nextBtn) return;
+
+                    let currentPage  = 0;
+                    let visibleCount = 3;
+                    let pageCount    = 1;
+
+                    function getVisibleCount() {
+                        const w = slider.clientWidth;
+                        if (w <= 768) return 1;   
+                        if (w <= 992) return 2;  
+                        return 3;                 
+                    }
+
+                    function updateLayout() {
+                        visibleCount = getVisibleCount();
+                        pageCount    = Math.max(1, Math.ceil(cards.length / visibleCount));
+
+                        let gap = 28; 
+                        if (visibleCount === 2) gap = 20;
+                        if (visibleCount === 1) gap = 0;
+
+                        cards.forEach(function (card, index) {
+                            card.style.flex = `0 0 calc( (100% - ${(visibleCount - 1)} * ${gap}px) / ${visibleCount} )`;
+                            card.style.marginRight = (index === cards.length - 1) ? "0px" : `${gap}px`;
+                        });
+
+                        if (currentPage > pageCount - 1) {
+                            currentPage = pageCount - 1;
+                        }
+                        updateTransform();
+                    }
+
+                    function updateTransform() {
+                        const sliderWidth = slider.clientWidth;
+                        const offset = sliderWidth * currentPage;
+                        track.style.transform = `translateX(-${offset}px)`;
+                    }
+
+                    prevBtn.addEventListener("click", function () {
+                        if (currentPage > 0) {
+                            currentPage--;
+                            updateTransform();
+                        }
+                    });
+
+                    nextBtn.addEventListener("click", function () {
+                        if (currentPage < pageCount - 1) {
+                            currentPage++;
+                            updateTransform();
+                        }
+                    });
+
+                    window.addEventListener("resize", updateLayout);
+
+                    updateLayout();
+                });
+            });
+
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const socialLinks = document.querySelectorAll(".sub-social .social-link");
+                if (!socialLinks.length) return;
+                let permanentActive = document.querySelector(".sub-social .social-link.active") || socialLinks[0];
+
+                socialLinks.forEach(l => l.classList.remove("active"));
+                permanentActive.classList.add("active");
+
+                socialLinks.forEach(link => {
+                    link.addEventListener("mouseenter", function () {
+                        socialLinks.forEach(l => l.classList.remove("active"));
+                        this.classList.add("active");
+                    });
+
+                    link.addEventListener("mouseleave", function () {
+                        socialLinks.forEach(l => l.classList.remove("active"));
+                        permanentActive.classList.add("active");
+                    });
+
+                    link.addEventListener("click", function () {
+                        permanentActive = this;
+                    });
+                });
+            });
+        </script> 
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const cards = document.querySelectorAll(".product-card");
+
+                function setActive(card) {
+                    document.querySelector(".product-card.active")?.classList.remove("active");
+                    card.classList.add("active");
+                }
+
+                cards.forEach(card => {
+                    card.addEventListener("mouseenter", () => {
+                        setActive(card);
+                    });
+                    card.addEventListener("click", () => {
+                        setActive(card);
+                    });
+
+                });
+            });
+        </script>
+        <script src="assets/js/shop.js"></script>
+        <script src="assets/js/wishlist-global.js"></script>
+        <script src="assets/js/home.js"></script>
+        <script src="assets/js/signinup.js"></script>
+        <script src="assets/js/signinup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,218 @@
+/* -----------------------------------
+   AUTH (SIGN IN / SIGN UP) SECTION
+-------------------------------------*/
+.eco-auth-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 16px;
+    background: #ffffff;
+}
+
+.eco-auth-wrapper {
+    width: 100%;
+    max-width: 480px;
+}
+
+/* Card */
+.eco-auth-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 36px 44px 32px;
+    box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
+    text-align: center;
+    border: 1px solid rgba(201, 196, 196, 0.295);
+}
+
+.eco-auth-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 28px;
+}
+
+/* Form base */
+.eco-auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.eco-auth-field {
+    position: relative;
+    width: 100%;
+}
+
+.eco-auth-input {
+    width: 100%;
+    height: 52px;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    padding: 0 16px;
+    font-size: 14px;
+    color: #111827;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.eco-auth-input::placeholder {
+    color: #9ca3af;
+}
+
+.eco-auth-input:focus {
+    border-color: #00b207;
+    box-shadow: 0 0 0 1px rgba(0, 178, 7, 0.12);
+}
+
+/* password fields (for both login & signup) */
+.eco-auth-field-password .eco-auth-input {
+    padding-right: 42px;
+}
+
+.eco-auth-eye-btn {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #9ca3af;
+    font-size: 18px;
+}
+
+/* Remember + Forget row (login page) */
+.eco-auth-helpers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.eco-auth-remember {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.eco-auth-remember input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    accent-color: #00b207;
+}
+
+/* Checkbox row (signup page) */
+.eco-auth-checkbox-row {
+    margin-top: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #6b7280;
+    text-align: left;
+}
+
+.eco-auth-checkbox-row input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    accent-color: #00b207;
+}
+
+/* links */
+.eco-auth-link {
+    color: #6b7280;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.eco-auth-link:hover {
+    color: #111827;
+}
+
+.eco-auth-register {
+    font-weight: 600;
+    color: #00b207;
+    text-decoration: none;
+}
+
+.eco-auth-register:hover {
+    color: #059669;
+}
+
+/* Primary button */
+.eco-auth-btn {
+    margin-top: 8px;
+    width: 100%;
+    border: none;
+    border-radius: 999px;
+    height: 52px;
+    background: #00b207;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.eco-auth-btn:hover {
+    background: #02a306;
+}
+
+.eco-auth-btn:active {
+    transform: translateY(1px);
+}
+
+.eco-auth-bottom {
+    margin-top: 18px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* ===================== RESPONSIVE ===================== */
+@media (max-width: 768px) {
+    .eco-auth-section {
+        padding: 40px 16px;
+        align-items: flex-start;
+    }
+
+    .eco-auth-card {
+        padding: 28px 20px 24px;
+        border-radius: 10px;
+    }
+
+    .eco-auth-title {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    .eco-auth-section {
+        padding: 32px 12px;
+    }
+
+    .eco-auth-card {
+        padding: 24px 18px 22px;
+    }
+
+    .eco-auth-btn {
+        height: 48px;
+    }
+}
+
+/* -----------------------------------
+   AUTH SECTION END
+-------------------------------------*/

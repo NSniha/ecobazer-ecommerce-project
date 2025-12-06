@@ -1,0 +1,1004 @@
+/* ===========================
+   HOT DEALS SECTION
+   =========================== */
+
+.hot-deals {
+    padding: 60px 0px;
+    background: #F7F7F7;
+}
+
+.hd-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hd-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.view-all {
+    color: #1ab05e;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* GRID */
+.hot-grid {
+    display: grid;
+    grid-template-columns: 1.35fr repeat(4, 1fr);
+    border-left: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* BIG CARD */
+.big-card {
+    grid-row: span 2;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+}
+
+/* BADGES */
+.badge-row {
+    display: flex;
+    gap: 6px;
+}
+
+.badge {
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.red {
+    background: #ff4d4d;
+}
+
+.blue {
+    background: #017bff;
+}
+
+/* BIG IMAGE */
+.big-img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    margin: 10px 0;
+}
+
+/* ACTION BUTTON BAR */
+.big-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 0px 0 10px 0;
+}
+
+.circle {
+    width: 38px;
+    height: 38px;
+    background: #f4f4f4;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ADD TO CART GREEN BUTTON */
+.add-btn {
+    background: #1ab05e;
+    padding: 10px 23px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* BIG CARD TITLE */
+.big-title {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: #2C742F;
+    padding-bottom: 4px;
+}
+
+/* PRICE */
+.price-row {
+    text-align: center;
+}
+
+.price-row .new {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.price-row .old {
+    color: #999;
+    text-decoration: line-through;
+    margin-left: 6px;
+}
+
+/* RATING */
+.rating-row {
+    text-align: center;
+    margin: 4px 0;
+}
+
+.stars {
+    color: #ffa400;
+}
+
+.feedback {
+    color: #777;
+    font-size: 12px;
+}
+
+/* OFFER LABEL */
+.offer-label {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+/* COUNTDOWN */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 10px;
+}
+
+.countdown div {
+    text-align: center;
+}
+
+.countdown span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.countdown small {
+    font-size: 10px;
+    color: #555;
+}
+
+/* SMALL PRODUCT CARDS */
+.p-card {
+    background: #fff;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 18px;
+    height: 295px;
+    position: relative;
+    text-align: center;
+}
+
+.p-img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+}
+
+.p-card h4 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0 4px 0;
+    text-align: left;
+    color: #837e7e;
+}
+
+.p-price {
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.stars {
+    color: #ffa400;
+    margin-top: 0px;
+    text-align: left;
+    font-size: 19px;
+}
+
+
+/* =====================================================
+   RESPONSIVE DESIGN — HOT DEALS GRID
+   ===================================================== */
+
+/* ========= 1200px ========= */
+@media (max-width: 1200px) {
+    .hot-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* 4 columns */
+    }
+
+    .big-card {
+        grid-row: span 2;
+    }
+}
+
+/* ========= 992px (Tablet Landscape) ========= */
+@media (max-width: 992px) {
+    .hot-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        /* 3 columns */
+    }
+
+    .p-card {
+        height: 280px;
+    }
+
+    .big-card .big-img {
+        height: 200px;
+    }
+}
+
+/* ========= 768px (Tablet Portrait) ========= */
+@media (max-width: 768px) {
+    .hd-header h2 {
+        font-size: 26px;
+    }
+
+    .hot-grid {
+        grid-template-columns: 1fr 1fr;
+        /* 2 columns */
+    }
+
+    .big-card {
+        grid-column: span 2;
+        /* Big card full width */
+        grid-row: span 1;
+    }
+
+    .big-card .add-btn {
+        padding: 8px 25px;
+        font-size: 14px;
+    }
+
+    .p-card {
+        height: 260px;
+    }
+}
+
+/* ========= 576px (Mobile) ========= */
+@media (max-width: 576px) {
+    .hd-header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hot-grid {
+        grid-template-columns: 1fr;
+        /* ONE COLUMN */
+    }
+
+    .big-card {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .big-card .big-img {
+        height: 180px;
+    }
+
+    .p-card {
+        height: auto;
+        padding: 15px;
+    }
+
+    .countdown {
+        gap: 14px;
+    }
+}
+
+/* ========= 420px (Small Phones) ========= */
+@media (max-width: 420px) {
+
+    .big-card {
+        padding: 15px;
+    }
+
+    .big-card .add-btn {
+        padding: 7px 18px;
+        font-size: 13px;
+    }
+
+    .p-card h4 {
+        font-size: 14px;
+    }
+
+    .p-price {
+        font-size: 14px;
+    }
+
+    .stars {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+.lock {
+    width: 34px;
+    position: absolute;
+    bottom: 34px;
+    right: 15px;
+}
+
+.badge.small {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.countdown-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 4px;
+}
+
+del {
+    color: #999;
+    font-weight: 400;
+}
+
+.product-food-img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 0px;
+    min-height: 188px;
+}
+
+.promo-card.yellow-card .promo-height>span,
+.promo-card.yellow-card .promo-height>h2,
+.promo-card.yellow-card .promo-height>p {
+    color: #000;
+}
+
+.promo-banner {
+    width: 100%;
+    max-width: 1300px;
+    margin: 60px auto;
+    height: 350px;
+    background: url('../images/DiscountBannar.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-content {
+    color: white;
+    max-width: 420px;
+    text-align: center;
+}
+
+.small-title {
+    font-size: 15px;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.promo-content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 10px 0 15px;
+}
+
+.promo-content h2 strong {
+    font-size: 58px;
+    font-weight: 700;
+    color: #FF8A00;
+}
+
+.subtext {
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.85;
+    margin-bottom: 25px;
+}
+
+.promo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #00B207;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 20px;
+    height: 42px;
+    border-radius: 999px;
+    text-decoration: none;
+    box-shadow: 0 6px 14px rgb(26 176 29 / 35%);
+    transition: 0.25s ease-in-out;
+    border-radius: 43px;
+    background: #ffffff;
+}
+
+.promo-btn span {
+    font-size: 20px;
+    margin-top: -2px;
+}
+
+.promo-btn:hover {
+    background: #00B207;
+    transform: translateY(-2px);
+}
+
+
+/* ------------------------------------
+    FEATURED PRODUCTS SECTION
+--------------------------------------- */
+.featured-products {
+    margin-top: 60px;
+}
+
+.fp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.fp-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.view-all {
+    color: #1aa94a;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.fp-slider {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+
+.fp-slider .swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.fp-slider .swiper-slide {
+    width: 260px !important;
+    flex-shrink: 0;
+    height: auto;
+    display: flex;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #1aa94a;
+    width: 45px;
+    height: 45px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 22px;
+}
+
+.featured-products {
+    margin: 60px 0px;
+}
+
+.fp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.fp-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.view-all {
+    color: #1aa94a;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.custom-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 10px 0;
+}
+
+.slide-track {
+    display: flex;
+    transition: transform 0.45s ease;
+}
+
+.fp-card-item {
+    width: 258px;
+    min-width: 258px;
+    max-width: 258px;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    padding: 16px;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    transition: 0.25s ease-in-out;
+}
+
+.fp-card-item.active {
+    border: 2px solid #1aa94a;
+}
+
+.fp-card-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.fp-card-item h4 {
+    font-size: 15px;
+    color: #837e7e;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.price {
+    font-size: 15px;
+}
+
+.new {
+    font-weight: bold;
+}
+
+.old {
+    color: #888;
+    margin-left: 5px;
+    text-decoration: line-through;
+}
+
+.rating {
+    font-size: 20px;
+    color: #ffa600;
+    margin-top: 4px;
+}
+
+.sale-badge {
+    background: #ff4d4d;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    background: #ffffff;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 100000;
+    transition: 0.25s ease;
+}
+
+.nav-btn:hover {
+    background: #1aa94a;
+    color: #fff;
+}
+
+.prev-btn {
+    left: 3px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+/* ============================================
+   RESPONSIVE
+============================================ */
+@media(max-width: 992px) {
+    .fp-card-item {
+        width: 230px;
+        min-width: 230px;
+        max-width: 230px;
+    }
+}
+
+@media(max-width: 768px) {
+    .fp-card-item {
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    .prev-btn,
+    .next-btn {
+        display: none;
+    }
+}
+
+@media(max-width:576px) {
+    .fp-card-item {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+.card-icons {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 50;
+}
+
+.icon-btn {
+    width: 28px !important;
+    height: 28px !important;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.icon-btn:hover {
+    background: #1aa94a;
+    filter: brightness(1.2);
+}
+
+.cart-btn {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-btn img {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+
+
+/* ----------------------
+    Blog Section
+---------------------- */
+.latest-news {
+    padding: 0px 0px 90px 0px;
+}
+
+.news-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+/* GRID */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* CARD */
+.news-card {
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+    transition: 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-4px);
+}
+
+/* IMAGE */
+.news-img {
+    position: relative;
+    height: 260px;
+}
+
+.news-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* DATE BADGE */
+.date-badge {
+    position: absolute;
+    bottom: 18px;
+    left: 18px;
+    width: 65px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.date-badge .day {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.date-badge .month {
+    font-size: 12px;
+    color: #777;
+    font-weight: 600;
+}
+
+/* META INFO */
+.meta-row {
+    display: flex;
+    gap: 20px;
+    padding: 18px 20px 12px;
+    font-size: 15px;
+    color: #777;
+}
+
+.meta-row span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.meta-row img {
+    width: 16px;
+    opacity: 0.8;
+}
+
+/* HEADING */
+.news-heading {
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0 20px;
+    line-height: 1.45;
+    color: #222;
+    margin-bottom: 18px;
+}
+
+/* READ MORE */
+.read-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 20px 20px;
+    color: #1aa94a;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.read-more img {
+    width: 16px;
+    transition: 0.2s ease;
+}
+
+.read-more:hover img {
+    transform: translateX(4px);
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px) {
+    .news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 576px) {
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Section title */
+.testi-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Navigation buttons */
+.testi-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.testi-nav button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.nav-left {
+    background: #fff;
+}
+
+.nav-right {
+    background: #1AA94A;
+    color: #fff;
+}
+
+.nav-left:hover {
+    background: #eee;
+}
+
+.nav-right:hover {
+    background: #148A39;
+}
+
+/* Grid layout */
+.testi-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Testimonial Card */
+.testi-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    position: relative;
+}
+
+/* Green Quote Icon */
+.quote-icon {
+    font-size: 46px;
+    color: #28b463;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 0.7;
+}
+
+/* Review Text */
+.testi-text {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* Footer Layout */
+.testi-footer {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* User Image */
+.user-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* User details */
+.user-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.user-role {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Rating stars */
+.rating {
+    color: #ffa600;
+    font-size: 20px;
+}
+
+/* ===============================
+   BRAND LOGO ROW
+================================ */
+.brand-logos {
+    padding: 60px 0;
+}
+
+.brand-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.brand-flex img {
+    height: 40px;
+    object-fit: contain;
+}
+
+/* ===============================
+   INSTAGRAM
+================================ */
+.instagram {
+    padding: 20px 0 50px;
+    text-align: center;
+}
+
+.insta-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 35px;
+    line-height: 1.3;
+}
+
+.insta-grid {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.insta-grid img {
+    width: 196px;
+    height: 190px;
+    border-radius: 12px;
+    object-fit: cover;
+}

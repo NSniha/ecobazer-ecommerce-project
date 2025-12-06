@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ======== Primary Meta Tags ======== -->
+        <title>Product Details – Ecobazar Online Grocery</title>
+        <meta name="description" content="View detailed information about this Ecobazar product including price, weight, ingredients, nutrition facts and delivery options. Shop fresh groceries online with Ecobazar.">
+        <meta name="keywords" content="Ecobazar product details, grocery product info, ingredients, nutrition facts, buy online, fresh food, Ecobazar shop">
+        <meta name="author" content="Ecobazar">
+        <meta name="robots" content="index, follow">
+
+        <!-- ======== Canonical URL ======== -->
+        <link rel="canonical" href="https://www.ecobazar.com/shop-details.html">
+
+        <!-- ======== Favicon ======== -->
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+        <!-- ======== Open Graph / Facebook ======== -->
+        <meta property="og:title" content="Ecobazar Product Details – Fresh Grocery Item">
+        <meta property="og:description" content="Check full details for this Ecobazar grocery product: price, size, ingredients and delivery availability. Order online and get it delivered to your door.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.ecobazar.com/shop-details.html">
+        <meta property="og:image" content="images/og-ecobazar.jpg">
+
+        <!-- ======== Twitter Card ======== -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Ecobazar Product Details – Online Grocery Item">
+        <meta name="twitter:description" content="View complete information about this Ecobazar grocery product and add it to your online cart for fast delivery.">
+        <meta name="twitter:image" content="images/og-ecobazar.jpg">
+
+        <!-- ========== Custom CSS =========== -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/shop-details.css">
+        <link rel="stylesheet" href="css/shop.css">
+
+        <!-- ========== Google Fonts =========== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!-- ================== HEADER START ================== -->
+        <header class="eco-header">
+            <div class="eco-top-bar">
+                <div class="container eco-top-inner">
+                    <div class="eco-top-location">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <span>
+                            Store Location: Ecobazar, 344 Lincoln Ave, Chicago, Illinois, USA
+                        </span>
+                    </div>
+
+                    <div class="eco-top-right">
+                        <button class="eco-top-link" type="button">
+                            <img src="images/usa.png" alt="USA Flag">
+                            EN
+                        </button> 
+
+                        <span class="eco-top-separator"></span>
+                        <div class="eco-top-auth-wrap">
+                            <a href="signin.html#auth-section"
+                            id="ecoSignInLink"
+                            class="eco-top-auth">
+                                Sign In
+                            </a>
+
+                            <span class="eco-top-auth-divider">/</span>
+
+                            <a href="signup.html#auth-section"
+                            id="ecoSignUpLink"
+                            class="eco-top-auth">
+                                Sign Up
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="eco-main-header">
+                <div class="container eco-main-inner">
+                    <a href="index.html" class="eco-logo" aria-label="Ecobazar Home">
+                        <img src="images/ecobazar-logo.png" alt="Ecobazar online grocery store logo">
+                    </a>
+                    <div class="eco-search-wrap">
+                        <div class="eco-search-field">
+                            <ion-icon name="search-outline"></ion-icon>
+                            <input
+                                type="text"
+                                placeholder="Search">
+                        </div>
+                        <button class="eco-search-btn" type="button">
+                            Search
+                        </button>
+                    </div>
+
+                    <div class="eco-header-right">
+                        <button class="eco-wishlist-btn" type="button" aria-label="Wishlist">
+                            <ion-icon name="heart-outline"></ion-icon>
+                            <span class="eco-wishlist-count" id="ecoWishlistCount">0</span>
+                        </button>
+
+                        <span class="eco-header-divider"></span>
+
+                        <button class="eco-cart-btn" type="button" aria-label="Cart">
+                            <span class="eco-cart-badge">0</span>
+                            <ion-icon name="bag-handle-outline"></ion-icon>
+                            <div class="eco-cart-text">
+                                <span class="eco-cart-label">Shopping cart:</span>
+                                <span class="eco-cart-amount">$00.00</span>
+                            </div>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="eco-nav-bar sub-page-navbar">
+                <div class="container eco-nav-inner">
+                    <button class="eco-nav-toggle sub-page-toggle" type="button" aria-label="Toggle Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                        <span>Menu</span>
+                    </button>
+
+                    <ul class="eco-nav-menu subpage-navitem">
+                        <button class="eco-nav-close" type="button" aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                        <li class="eco-nav-item eco-active">
+                            <a class="eco-nav-link" href="/">Home</a>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Shop</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="shop.html">Shop Grid</a></li>
+                                <li><a href="shop-details.html">Product Details</a></li>
+                                <li><a href="wishlist.html">Wishlist</a></li>
+                                <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                <li><a href="checkout.html">Checkout</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Pages</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="error-404.html">404 Page</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item eco-has-dropdown">
+                            <button class="eco-nav-link" type="button">
+                                <span>Blog</span>
+                                <ion-icon name="chevron-down-outline"></ion-icon>
+                            </button>
+                            <ul class="eco-submenu">
+                                <li><a href="blog-list.html">Blog List</a></li>
+                                <li><a href="blog-details.html">Blog Details</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="about.html">About Us</a>
+                        </li>
+
+                        <li class="eco-nav-item">
+                            <a class="eco-nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="eco-nav-phone sub-eco-phone">
+                        <span class="eco-phone-icon">
+                            <img src="images/PhoneCall.png" alt="PhoneCall">
+                        </span>
+                        <a href="tel:+12195550114" class="eco-phone-number">
+                            (219) 555-0114
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+        <!-- ================== HEADER END ====================== -->
+
+
+        
+        <!-- ================== HERO SECTION START ================== -->
+        <section class="sub-hero-section">
+            <div class="container">
+                <div class="subpage-title-details">
+                    <div class="subpage-icon">
+                        <img src="images/home-icon.png" alt="HOME ICON">
+                        <img src="images/home-left-arrow-icon.png" alt="ARROW">
+                    </div>
+                    <div class="subpage-title">
+                        <p>Product Details</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================== HERO SECTION END ================== -->
+        
+        
+        <!-- ========================== PRODUCT DETAILS START ======================= -->
+        <section class="product-details-page">
+            <div class="container">
+                <div class="product-container">
+
+                    <!-- LEFT SIDE : IMAGE GALLERY -->
+                    <div class="product-gallery">
+
+                        <div class="thumbs">
+                            <img src="images/pro-01.png" class="thumb active" alt="Fresh avocado front view" onclick="changeImage(this)">
+                            <img src="images/pro-02.png" class="thumb" alt="Sliced avocado on board" onclick="changeImage(this)">
+                            <img src="images/pro-03.png" class="thumb" alt="Avocado with seed close-up" onclick="changeImage(this)">
+                            <img src="images/pro-04.png" class="thumb" alt="Avocado pieces in bowl" onclick="changeImage(this)">
+                        </div>
+
+                        <div class="main-image">
+                            <img id="mainProductImage" src="images/pro-01.png" alt="Fresh Ripe Avocado">
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT SIDE PRODUCT DETAILS -->
+                    <div class="right-side">
+
+                        <h1 class="p-title">
+                            Fresh Ripe Avocado
+                            <span class="stock-badge">In Stock</span>
+                        </h1>
+
+                        <div class="rating-line">
+                            <span class="stars">★★★★★</span>
+                            <span class="review">32 Reviews</span>
+                            <span class="dot">•</span>
+                            <span class="sku">SKU: ECO-AVO-015</span>
+                        </div>
+
+                        <div class="price-line-d">
+                            <span class="p-old-price">$4.99</span>
+                            <span class="p-new-price">$3.79</span>
+                            <span class="discount">24% Off</span>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <!-- BRAND + SHARE -->
+                        <div class="brand-share">
+                            <div class="brand-box">
+                                <p>Brand:</p>
+                                <img src="images/pro-brand.png" alt="Ecobazar Fresh Farms">
+                            </div>
+
+                            <div class="share-box">
+                                <p>Share item:</p>
+                                <span class="icon green"><ion-icon name="logo-facebook"></ion-icon></span>
+                                <span class="icon"><ion-icon name="logo-twitter"></ion-icon></span>
+                                <span class="icon"><ion-icon name="logo-pinterest"></ion-icon></span>
+                                <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                            </div>
+                        </div>
+
+                        <p class="desc-text">
+                            Creamy, fresh and rich in healthy fats, our Ecobazar avocados are perfect for toast,
+                            salads, smoothies and guacamole. Hand-picked at the right stage of ripeness and
+                            carefully packed to keep the texture buttery and the taste naturally delicious.
+                        </p>
+
+                        <div class="divider"></div>
+
+                        <!-- QUANTITY + CART -->
+                        <div class="cart-row">
+                            
+                            <div class="qty-box">
+                                <button class="qty-btn"><ion-icon name="remove-outline"></ion-icon></button>
+                                <span class="qty-number">1</span>
+                                <button class="qty-btn"><ion-icon name="add-outline"></ion-icon></button>
+                            </div>
+
+                            <button class="add-cart-btn">
+                                Add to Cart
+                                <ion-icon name="bag-handle-outline"></ion-icon>
+                            </button>
+
+                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                <ion-icon name="heart-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <div class="divider"></div>
+                        <!-- CATEGORY + TAG -->
+                        <div class="meta-section">
+                            <p><b>Category:</b> Fresh Fruit</p>
+                            <p>
+                                <b>Tags:</b>
+                                Avocado · Organic · Healthy Fats · Breakfast · Salad
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========================== PRODUCT DETAILS END ======================= -->
+
+
+
+        <!-- ========================== PRODUCT TABS START ======================= -->
+        <section class="product-tabs">
+            <div class="container">
+
+                <!-- TABS -->
+                <div class="pd-tabs">
+                    <button class="tab-btn active" data-tab="desc">Descriptions</button>
+                    <button class="tab-btn" data-tab="info">Additional Information</button>
+                    <button class="tab-btn" data-tab="feedback">Customer Feedback</button>
+                </div>
+
+                <!-- TAB CONTENT WRAPPER -->
+                <div class="tab-content-wrapper">
+
+                    <!-- =======================
+                        TAB 1: DESCRIPTION
+                    ======================== -->
+                    <div class="tab-content active" id="desc">
+
+                        <div class="pd-wrapper">
+
+                            <!-- LEFT -->
+                            <div class="pd-left">
+                                <p>
+                                    Ecobazar avocados are carefully selected for perfect ripeness, creamy texture and
+                                    naturally rich flavour. Each piece is hand-checked to make sure the outer skin is
+                                    firm yet yields slightly to gentle pressure, so you get the ideal balance between
+                                    softness and freshness.
+                                </p>
+
+                                <p>
+                                    These avocados are perfect for toast, salads, smoothies, sushi rolls and homemade
+                                    guacamole. Simply slice, scoop and serve – no extra preparation needed. They are a
+                                    great source of healthy fats, fibre and vitamins that support a balanced everyday diet.
+                                </p>
+
+                                <ul class="check-list">
+                                    <li>
+                                        <ion-icon name="checkmark-circle"></ion-icon>
+                                        Naturally creamy texture with rich, buttery taste.
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-circle"></ion-icon>
+                                        Packed with healthy fats, fibre, and vitamin E.
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-circle"></ion-icon>
+                                        Ideal for breakfast bowls, sandwiches and salads.
+                                    </li>
+                                    <li>
+                                        <ion-icon name="checkmark-circle"></ion-icon>
+                                        Sourced from trusted farms and cold-chain handled.
+                                    </li>
+                                </ul>
+
+                                <p>
+                                    For best results, store firm avocados at room temperature until they soften slightly.
+                                    Once ripe, refrigerate and consume within 2–3 days. To prevent browning after cutting,
+                                    sprinkle with lemon or lime juice and keep in an airtight container.
+                                </p>
+                            </div>
+
+                            <!-- RIGHT -->
+                            <div class="pd-right">
+                                <div class="pd-video-box">
+                                    <img src="images/pro-description-banner.png" alt="Fresh avocado recipe ideas">
+                                    <div class="play-btn">
+                                        <ion-icon name="play"></ion-icon>
+                                    </div>
+                                </div>
+
+                                <div class="pd-feature-box">
+
+                                    <div class="feature">
+                                        <ion-icon name="pricetag-outline"></ion-icon>
+                                        <div class="feature-pro-details">
+                                            <h4>24% Discount</h4>
+                                            <p>Save more on every avocado pack</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="feature">
+                                        <ion-icon name="leaf-outline"></ion-icon>
+                                        <div class="feature-pro-details">
+                                            <h4>100% Organic</h4>
+                                            <p>Certified organic, pesticide-free fruits</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- =======================
+                        TAB 2: ADDITIONAL INFO
+                    ======================== -->
+                    <div class="tab-content" id="info">
+
+                        <div class="pd-wrapper">
+
+                            <!-- LEFT -->
+                            <div class="info-table">
+                                <p><b>Weight:</b> <span>Approx. 500 g (Pack)</span></p>
+                                <p><b>Color:</b> <span>Green skin, creamy yellow flesh</span></p>
+                                <p><b>Type:</b> <span>Organic, Ready-to-eat</span></p>
+                                <p><b>Category:</b> <span>Fresh Fruit</span></p>
+                                <p><b>Stock Status:</b> <span>Available (2,340 packs)</span></p>
+                                <p>
+                                    <b>Tags:</b>
+                                    <span>Avocado, Organic, Healthy Fats, Breakfast, Salad, Smoothie</span>
+                                </p>
+                            </div>
+
+                            <!-- RIGHT -->
+                            <div class="pd-right">
+                                <div class="pd-video-box">
+                                    <img src="images/pro-description-banner.png" alt="How to cut and store avocado">
+                                    <div class="play-btn">
+                                        <ion-icon name="play"></ion-icon>
+                                    </div>
+                                </div>
+
+                                <div class="pd-feature-box">
+                                    <div class="feature">
+                                        <ion-icon name="pricetag-outline"></ion-icon>
+                                        <div class="feature-pro-details">
+                                            <h4>Fresh Price Everyday</h4>
+                                            <p>Fair pricing directly from partnered farms</p>
+                                        </div>
+                                    </div>
+                                    <div class="feature">
+                                        <ion-icon name="leaf-outline"></ion-icon>
+                                        <div class="feature-pro-details">
+                                            <h4>Farm-to-Home</h4>
+                                            <p>Cold-chain delivered to keep avocados fresh</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- =======================
+                        TAB 3: CUSTOMER FEEDBACK
+                    ======================== -->
+                    <div class="tab-content" id="feedback">
+
+                        <div class="feedback-list">
+
+                            <!-- ITEM 1 -->
+                            <div class="feedback-item">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Kristin Watson</h4>
+                                        <span class="time">2 min ago</span>
+                                    </div>
+                                    <div class="stars">★★★★★</div>
+                                    <p>
+                                        Super creamy and fresh! Perfect for my avocado toast every morning.
+                                        None of them were overripe or damaged.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <!-- ITEM 2 -->
+                            <div class="feedback-item">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Jane Cooper</h4>
+                                        <span class="time">30 Apr, 2024</span>
+                                    </div>
+                                    <div class="stars">★★★★☆</div>
+                                    <p>
+                                        Good quality and taste. I kept them at room temperature for a day
+                                        and they ripened evenly. One piece was a bit firm but still usable.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <!-- ITEM 3 -->
+                            <div class="feedback-item">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Jacob Jones</h4>
+                                        <span class="time">1 week ago</span>
+                                    </div>
+                                    <div class="stars">★★★★★</div>
+                                    <p>
+                                        Made guacamole for a family dinner – everyone loved it.
+                                        Clean, fresh and no black spots inside. Highly recommended.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <!-- ITEM 4 -->
+                            <div class="feedback-item">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Ralph Edwards</h4>
+                                        <span class="time">2 weeks ago</span>
+                                    </div>
+                                    <div class="stars">★★★★★</div>
+                                    <p>
+                                        Great value for the price. I use these avocados in salads,
+                                        sandwiches and smoothies – they stay fresh for several days.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="divider"></div>
+
+                            <!-- EXTRA ITEM 5 (HIDDEN INITIALLY) -->
+                            <div class="feedback-item more-review" style="display:none;">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Cody Fisher</h4>
+                                        <span class="time">1 month ago</span>
+                                    </div>
+                                    <div class="stars">★★★★☆</div>
+                                    <p>
+                                        Nicely packed and delivered on time. A couple of pieces needed one more
+                                        day to ripen but overall very good quality.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="divider more-review" style="display:none;"></div>
+
+                            <!-- EXTRA ITEM 6 -->
+                            <div class="feedback-item more-review" style="display:none;">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Devon Lane</h4>
+                                        <span class="time">1 month ago</span>
+                                    </div>
+                                    <div class="stars">★★★★★</div>
+                                    <p>
+                                        I order these every week for my café. Customers love the taste and
+                                        consistency. Very reliable quality from Ecobazar.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="divider more-review" style="display:none;"></div>
+
+                            <!-- EXTRA ITEM 7 -->
+                            <div class="feedback-item more-review" style="display:none;">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Annette Black</h4>
+                                        <span class="time">2 months ago</span>
+                                    </div>
+                                    <div class="stars">★★★★☆</div>
+                                    <p>
+                                        Nice and fresh. I made avocado smoothie and salad with them.
+                                        Will definitely reorder during discount.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="divider more-review" style="display:none;"></div>
+
+                            <!-- EXTRA ITEM 8 -->
+                            <div class="feedback-item more-review" style="display:none;">
+                                <img src="images/pro-review.png" alt="Customer review avatar">
+                                <div class="fb-content">
+                                    <div class="fb-header">
+                                        <h4>Guy Hawkins</h4>
+                                        <span class="time">3 months ago</span>
+                                    </div>
+                                    <div class="stars">★★★★★</div>
+                                    <p>
+                                        Best online avocado I have tried so far. Fresh, clean and safely packed.
+                                        Happy with Ecobazar delivery service.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- LOAD MORE -->
+                            <div class="load-more-wrap">
+                                <button class="load-more-btn" type="button">Load More</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================== PRODUCT TABS END ======================= -->
+
+
+        <!-- ========================== RELATED PRODUCT START ==================== -->
+        <section class="related-products">
+            <div class="container">
+                <h2 class="rp-title">Related Products</h2>
+
+                <div class="rp-grid">
+
+                    <!-- CARD 1 – PINEAPPLE -->
+                    <div class="rp-card active">
+                        <span class="sale-badge">Sale 25%</span>
+
+                        <div class="rp-icons">
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                        </div>
+
+                        <div class="rp-img">
+                            <img src="images/related-pro-01.png" alt="Fresh Pineapple Half Cut">
+                        </div>
+
+                        <h4 class="rp-name">Fresh Pineapple</h4>
+
+                        <div class="rp-price">
+                            <span class="new">$5.49</span>
+                            <span class="old">$7.29</span>
+                        </div>
+
+                        <div class="rp-stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="rp-cart">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 2 – WATERMELON -->
+                    <div class="rp-card">
+                        <div class="rp-icons">
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                        </div>
+
+                        <div class="rp-img">
+                            <img src="images/related-pro-02.png" alt="Striped Watermelon with Slice">
+                        </div>
+
+                        <h4 class="rp-name">Striped Watermelon</h4>
+
+                        <div class="rp-price">
+                            <span class="new">$6.99</span>
+                            <span class="old">$8.49</span>
+                        </div>
+
+                        <div class="rp-stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="rp-cart">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 3 – CANTALOUPE / MELON -->
+                    <div class="rp-card">
+                        <div class="rp-icons">
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                        </div>
+
+                        <div class="rp-img">
+                            <img src="images/related-pro-03.png" alt="Cantaloupe Melon with Slices">
+                        </div>
+
+                        <h4 class="rp-name">Cantaloupe Melon</h4>
+
+                        <div class="rp-price">
+                            <span class="new">$4.89</span>
+                            <span class="old">$5.79</span>
+                        </div>
+
+                        <div class="rp-stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="rp-cart green">
+                            <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <!-- CARD 4 – ORANGE -->
+                    <div class="rp-card">
+                        <div class="rp-icons">
+                            <button><ion-icon name="heart-outline"></ion-icon></button>
+                            <button><ion-icon name="eye-outline"></ion-icon></button>
+                        </div>
+
+                        <div class="rp-img">
+                            <img src="images/related-pro-04.png" alt="Fresh Juicy Orange with Leaves">
+                        </div>
+
+                        <h4 class="rp-name">Juicy Orange</h4>
+
+                        <div class="rp-price">
+                            <span class="new">$3.49</span>
+                            <span class="old">$4.19</span>
+                        </div>
+
+                        <div class="rp-stars">
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star"></ion-icon>
+                            <ion-icon name="star-outline"></ion-icon>
+                        </div>
+
+                        <button class="rp-cart">
+                           <ion-icon name="cart-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ========================== RELATED PRODUCT END ==================== -->
+
+
+
+        <!-- ================== NEWSLETTER SECTION START ================== -->
+        <section class="newsletter">
+            <div class="container sub-flex">
+
+                <div class="sub-left">
+                    <h3>Subscribe to our Ecobazar newsletter</h3>
+                    <p>Get the latest grocery deals, fresh arrivals, and healthy recipe ideas delivered straight to your inbox.</p>
+                </div>
+
+                <div class="sub-right">
+                    <!-- pill-style form -->
+                    <div class="bottom-subscribe">
+                        <input type="email" placeholder="Your email address">
+                        <button class="sub-btn">Subscribe</button>
+                    </div>
+
+                    <!-- social icons with Ionicons -->
+                    <div class="sub-social">
+                        <a href="https://www.facebook.com"
+                        class="social-link active"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+
+                        <a href="https://www.twitter.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a>
+
+                        <a href="https://www.pinterest.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Pinterest">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </a>
+
+                        <a href="https://www.instagram.com"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Ecobazar on Instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ================== NEWSLETTER SECTION END ================== -->
+
+
+
+        <!-- ================== FOOTER SECTION START ================== -->
+        <footer class="footer">
+            <div class="container footer-grid">
+
+                <!-- Left Column -->
+                <div class="footer-about">
+                    <img src="images/footer-logo.png"
+                        class="footer-logo"
+                        alt="Ecobazar grocery store footer logo">
+                    <p>Ecobazar is your online grocery partner for fresh produce, pantry essentials, and daily household needs, delivered with care.</p>
+
+                    <div class="footer-contact">
+                        <p>
+                            <a href="tel:+12195550114">(219) 555-0114</a>
+                            <span>or</span>
+                            <a href="mailto:support@ecobazar.com">support@ecobazar.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- My Account -->
+                <div class="footer-col">
+                    <h4>My Account</h4>
+                    <ul>
+                        <li><a href="my-account.html">My Account</a></li>
+                        <li><a href="order-history.html">Order History</a></li>
+                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                        <li><a href="wishlist.html">Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <!-- Helps -->
+                <div class="footer-col">
+                    <h4>Help & Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQs</a></li>
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="footer-col">
+                    <h4>Popular Categories</h4>
+                    <ul>
+                        <li><a href="shop.html?category=fruits-vegetables">Fruit & Vegetables</a></li>
+                        <li><a href="shop.html?category=meat-fish">Meat & Fish</a></li>
+                        <li><a href="shop.html?category=bread-bakery">Bread & Bakery</a></li>
+                        <li><a href="shop.html?category=beauty-health">Beauty & Health</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom container">
+                <p>Ecobazar eCommerce © 2025. All Rights Reserved</p>
+                <div class="payment-icons">
+                    <img src="images/applepay.png" alt="Apple Pay accepted">
+                    <img src="images/visa.png" alt="Visa payments accepted">
+                    <img src="images/mastercard.png" alt="Mastercard payments accepted">
+                    <img src="images/secure.png" alt="Secure online payment badge">
+                </div>
+            </div>
+        </footer>
+        <!-- ================== FOOTER SECTION END ================== -->
+
+
+
+        <!-- ================= SCRIPT ============== -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="assets/js/main-nav.js"></script>
+        <script src="assets/js/shop-details.js"></script>
+        <script src="assets/js/wishlist-global.js"></script>
+        <script src="assets/js/signinup.js"></script>
+    </body>
+</html>

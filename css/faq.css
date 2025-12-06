@@ -1,0 +1,197 @@
+/* -------------------------------  
+    FAQ SECTION START
+--------------------------------- */
+.ecoFaq_section {
+    padding: 60px 0 0 0;
+    background-color: #ffffff;
+}
+
+.ecoFaq_container {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.ecoFaq_left {
+    flex: 0 0 52%;
+    padding-bottom: 60px;
+}
+
+.ecoFaq_title {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 32px;
+}
+
+.ecoFaq_list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ecoFaq_item {
+    background-color: #f4f5f7;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: background-color 0.25s ease, border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.ecoFaq_item.ecoFaq_item--active {
+    background-color: #ffffff;
+    border-color: #22c55e;
+    box-shadow: 0 0 0 1px rgba(34, 197, 94, 0.1);
+    min-height: 100%;
+}
+
+.ecoFaq_header {
+    width: 100%;
+    padding: 16px 22px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.ecoFaq_question {
+    font-size: 15px;
+    font-weight: 500;
+    color: #111827;
+    text-align: left;
+}
+
+.ecoFaq_item.ecoFaq_item--active .ecoFaq_question {
+    color: #16a34a;
+}
+
+.ecoFaq_iconWrap {
+    width: 28px;
+    height: 28px;
+    border-radius: 999px;
+    border: 1px solid #d1d5db;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.ecoFaq_iconLine {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #111827;
+    border-radius: 999px;
+    transition: opacity 0.2s ease;
+}
+
+.ecoFaq_iconLine--horiz {
+    width: 12px;
+    height: 2px;
+}
+
+.ecoFaq_iconLine--vert {
+    width: 2px;
+    height: 12px;
+}
+
+.ecoFaq_item.ecoFaq_item--active .ecoFaq_iconLine--vert {
+    opacity: 0;
+}
+
+.ecoFaq_body {
+    padding: 0 22px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.ecoFaq_item.ecoFaq_item--active .ecoFaq_body {
+    padding-bottom: 18px;
+}
+
+.ecoFaq_body p {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+.ecoFaq_right {
+    flex: 0 0 48%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.ecoFaq_image {
+    max-width: 572px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* =======================  
+    RESPONSIVE  
+========================== */
+@media (max-width: 992px) {
+    .ecoFaq_container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .ecoFaq_right {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h2.ecoFaq_title {
+        font-size: 32px;
+    }
+
+    .ecoFaq_header {
+        padding: 14px 16px;
+    }
+
+    .ecoFaq_body {
+        padding: 0 16px;
+    }
+
+    .ecoFaq_item.ecoFaq_item--active .ecoFaq_body {
+        padding-bottom: 14px;
+    }
+
+    .ecoFaq_left {
+        padding-bottom: 0px;
+    }
+}
+
+@media (max-width: 576px) {
+    h2.ecoFaq_title {
+        font-size: 26px;
+    }
+
+    .ecoFaq_body p {
+        margin-top: 0px;
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .ecoFaq_question {
+        font-size: 14px;
+    }
+
+    .ecoFaq_container {
+        gap: 30px;
+    }
+}
+
+/* -------------------------------  
+    FAQ SECTION END
+--------------------------------- */
