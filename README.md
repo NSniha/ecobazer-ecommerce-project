@@ -1,4 +1,4 @@
-## ****Ecobazar – Modern eCommerce Grocery Website****
+### ***Ecobazar – Modern eCommerce Grocery Website***
 
 ---
 
