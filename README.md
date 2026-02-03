@@ -1,8 +1,4 @@
-Sure Niha!
-Here is the updated README **without icons** and with a **more detailed, professional overview section**.
-Everything is now clean, text-only, and suitable for GitHub.
-
----
+<img width="1280" height="800" alt="Ecobazar-ecommerce (2)" src="https://github.com/user-attachments/assets/6dc5c7aa-484d-4389-9a44-35bd7d8728b3" />
 
 # **Ecobazar – Modern eCommerce Grocery Website**
 
@@ -74,54 +70,3 @@ Ecobazar/
 │── README.md
 ```
 
----
-
-## **How to Run the Project**
-
-1. Clone the repository:
-
-```
-git clone https://github.com/your-username/ecobazar.git
-cd ecobazar
-```
-
-2. Open `index.html` directly in a browser
-   or start a local server using:
-
-```
-npm install -g live-server
-live-server
-```
-
----
-
-## **Screenshots (Add when available)**
-
-```
-![Homepage Screenshot](assets/images/screenshot-home.png)
-![Product Page Screenshot](assets/images/screenshot-product.png)
-```
-
----
-
-## **Contributing**
-
-Contributions are welcome.
-You can submit issues or create pull requests to improve the project.
-
----
-
-## **License**
-
-This project is licensed under the MIT License.
-
----
-
-## **Author**
-
-Nobonita Saha Niha
-Front-End Web Developer | CSE Student
-
----
-
-If you'd like, I can also prepare a **short version**, **SEO-optimized version**, or **professional portfolio version** of the README.
