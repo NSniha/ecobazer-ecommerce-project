@@ -1,4 +1,12 @@
-### ***Ecobazar – Modern eCommerce Grocery Website***
+Sure Niha!
+Here is the updated README **without icons** and with a **more detailed, professional overview section**.
+Everything is now clean, text-only, and suitable for GitHub.
+
+---
+
+# **Ecobazar – Modern eCommerce Grocery Website**
+
+A fully responsive and user-friendly online grocery shopping platform.
 
 ---
 
@@ -8,7 +16,7 @@ Ecobazar is a complete front-end eCommerce website designed to provide a smooth 
 
 The system includes essential eCommerce pages such as product listing, product details, categories, wishlist, cart, and checkout. Additional content pages like About, Blog, and Contact are included to give the website a complete commercial structure. Every page has been carefully designed to ensure consistent branding, responsive layouts, and a seamless browsing experience across devices.
 
-This project is part of my final year submission for the Bachelor of Science in Computer Science and Engineering (CSE). It focuses on applying practical web development skills, building reusable components, organizing UI elements systematically, and delivering a production-quality interface suitable for real deployment or future integration with the backend.
+This project is part of my final year submission for the Bachelor of Science in Computer Science and Engineering (CSE). It focuses on applying practical web development skills, building reusable components, organizing UI elements systematically, and delivering a production-quality interface suitable for real deployment or future backend integration.
 
 ---
 
@@ -65,3 +73,55 @@ Ecobazar/
 │   ├── images/
 │── README.md
 ```
+
+---
+
+## **How to Run the Project**
+
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/ecobazar.git
+cd ecobazar
+```
+
+2. Open `index.html` directly in a browser
+   or start a local server using:
+
+```
+npm install -g live-server
+live-server
+```
+
+---
+
+## **Screenshots (Add when available)**
+
+```
+![Homepage Screenshot](assets/images/screenshot-home.png)
+![Product Page Screenshot](assets/images/screenshot-product.png)
+```
+
+---
+
+## **Contributing**
+
+Contributions are welcome.
+You can submit issues or create pull requests to improve the project.
+
+---
+
+## **License**
+
+This project is licensed under the MIT License.
+
+---
+
+## **Author**
+
+Nobonita Saha Niha
+Front-End Web Developer | CSE Student
+
+---
+
+If you'd like, I can also prepare a **short version**, **SEO-optimized version**, or **professional portfolio version** of the README.
